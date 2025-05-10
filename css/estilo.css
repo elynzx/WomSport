@@ -109,9 +109,17 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5rem 12rem;
+  padding: 5rem 12dvw;
   align-items: end;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  footer {
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 footer li {
