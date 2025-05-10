@@ -1,11 +1,13 @@
 .banner {
   position: relative;
   width: 100%;
+  overflow-x: hidden;
+  background-color: #ffaac2;
 }
 
 .banner img {
   width: 100%;
-  height: 760px;
+  height: auto 80dvh;
   object-fit: cover;
   object-position: top;
 }

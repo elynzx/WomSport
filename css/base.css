@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--color-brown);
+  color: #805c36;
 }
 
 a {
@@ -24,6 +24,12 @@ a {
 
 li {
   list-style: none;
+}
+li a {
+  color: var(--color-brown);
+}
+a:hover {
+  color: var(--color-brown);
 }
 
 body {
