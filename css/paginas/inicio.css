@@ -97,6 +97,11 @@ main {
 
 .highlight {
   margin-top: 50px;
+  padding: 5dvh 8dvw;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--color-pinkLight);
 }
 
 .highlight-content {
@@ -104,8 +109,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 20rem;
-  background-color: var(--color-pinkLight);
+  padding: auto 20rem;
 }
 
 .highlight-text {
