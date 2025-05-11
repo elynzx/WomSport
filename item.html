@@ -73,7 +73,7 @@
             <p class="size-label">Talla ropa:</p>
             <p class="size-warning">Debes elegir tu talla</p>
             <div class="sizes">
-              <button class="size-btn active">XS</button>
+              <button class="size-btn">XS</button>
               <button class="size-btn">S</button>
               <button class="size-btn">M</button>
               <button class="size-btn">L</button>
@@ -86,9 +86,7 @@
             <button onclick="changeQuantity(1)">+</button>
           </div>
 
-          <select>
-            <option>Selecciona opciones</option>
-          </select>
+          <button id="add-to-card" disabled>Selecciona opciones</button>
         </div>
       </section>
 
@@ -171,12 +169,14 @@
         quantitySpan.innerText = current;
       }
 
+      const addToCart = document.getElementById("add-to-card");
       const buttons = document.querySelectorAll(".size-btn");
 
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
           buttons.forEach((btn) => btn.classList.remove("active"));
           button.classList.add("active");
+          addToCart.disabled = false;
         });
       });
     </script>
