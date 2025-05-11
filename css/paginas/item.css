@@ -69,27 +69,40 @@ body {
   border: 2px solid #555;
 }
 
-#add-to-card {
-  border-width: 0;
-  border-radius: 0;
-}
-
-
-#add-to-card:disabled {
-  background-color: #efefef;
-}
-
 .quantity-selector {
+  border: solid 1px #eee;
+
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   margin: 1rem 0;
 }
 
 .quantity-selector button {
-  width: 30px;
-  height: 30px;
+  width: 2.5rem;
+  height: 2.5rem;
   font-size: 1rem;
+}
+
+#add-to-card {
+  color: #fff;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+
+  /* background-color: var(--color-pinkLight); */
+  background-color: var(--color-nueve);
+
+  border-width: 0;
+  border-radius: 0;
+
+  width: 80%;
+}
+
+
+#add-to-card:disabled {
+  color: #46484d;
+  background-color: #efefef;
 }
 
 .similar-products {
@@ -118,9 +131,6 @@ body {
 }
 
 button {
-  background: #fff;
-  border: 1px solid #e91e63;
-  color: #e91e63;
   padding: 0.5rem;
   cursor: pointer;
   border-radius: 5px;
