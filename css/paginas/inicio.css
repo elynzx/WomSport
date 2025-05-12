@@ -39,6 +39,11 @@
   background-color: transparent;
   border: 1px solid var(--color-white);
   color: var(--color-white);
+  transition: transform 0.3s ease;
+}
+
+.banner_info button:hover {
+  transform: scale(1.2);
 }
 
 main {
@@ -80,7 +85,7 @@ main {
 }
 
 .product img {
-  filter: drop-shadow(0px 2px 5px var(--color-gray));
+  filter: drop-shadow(0px 2px 5px rgb(0, 0, 0, 0.1));
 }
 
 .product h4 {
@@ -117,12 +122,11 @@ main {
 .highlight-text h2 {
   font-size: 30px;
   font-weight: 700;
-  color: var(--color-brown);
   margin-bottom: 1rem;
 }
 
 .highlight-text p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .highlight-btn {
@@ -138,8 +142,13 @@ main {
   border-radius: 20px;
 }
 
-.highlight img:hover {
+.highlight-content img:hover {
   transform: scale(1.05);
+}
+
+.highlight-btn:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
 }
 
 /*LO NUEVO*/
@@ -247,7 +256,7 @@ main {
   width: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banner {
     display: flex;
     flex-direction: column;
