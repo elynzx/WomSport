@@ -256,12 +256,15 @@ serian las anteriores */
   border: 1px solid var(--color-nueve);
   color: var(--color-nueve);
 
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .shopping:hover {
-  background-color: #e8e8e8;
+  background-color: var(--color-cuatro);
   color: #fff;
+
+  transform: translateY(-2.5px);
+  box-shadow: 1px 5px 10px var(--color-nueve);
 }
 
 button {
