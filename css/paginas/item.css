@@ -10,7 +10,7 @@ main {
 }
 
 main * {
-  font-family: 'roboto';
+  font-family: "roboto";
   color: #444;
   /* font-weight: 300; */
 }
@@ -97,7 +97,7 @@ estrellas completas */
 .price {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 
   font-weight: 500;
   margin: 1rem 0;
@@ -108,12 +108,11 @@ estrellas completas */
 
 .size-selector .size-label .size-warning {
   font-size: 0.95rem;
-  font-weight:400;
+  font-weight: 400;
 }
 
 .size-label {
   margin-bottom: 1.25rem;
-
 }
 
 .size-warning {

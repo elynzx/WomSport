@@ -78,16 +78,18 @@
           <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</h1>
           <div class="item-resume">
             <p style="color: #777">SKU: 34708610827999</p>
-            <div class="rating">
-              <span>ㅤ  365</span>
-              <div class="star zero"></div>
-              <div class="star zero"></div>
-              <div class="star zero"></div>
-              <div class="star half"></div>
-              <div class="star full"></div>
+            <div id="star-holder" class="rating">
+              <span>ㅤ 365</span>
+              <div class="star zero" onclick="setStars(5)"></div>
+              <div class="star zero" onclick="setStars(4)"></div>
+              <div class="star zero" onclick="setStars(3)"></div>
+              <div class="star half" onclick="setStars(2)"></div>
+              <div class="star full" onclick="setStars(1)"></div>
             </div>
           </div>
-          <div class="price"><span>Precio: </span><strong>S/ XX.XX</strong></div>
+          <div class="price">
+            <span>Precio: </span><strong>S/ XX.XX</strong>
+          </div>
 
           <div class="size-selector">
             <p class="size-label">TALLA ROPA:</p>
@@ -204,6 +206,26 @@
           addToCart.textContent = "Agregar al carro";
         });
       });
+
+      function setStars(n) {
+        const container = document.getElementById("star-holder");
+        const stars = container.querySelectorAll("div");
+
+        stars.forEach((star) => {
+          star.classList.remove("full", "half", "zero");
+        });
+
+        const total = stars.length;
+        const startIndex = total - n;
+
+        stars.forEach((star, index) => {
+          if (index >= startIndex) {
+            star.classList.add("full");
+          } else {
+            star.classList.add("zero");
+          }
+        });
+      }
     </script>
   </body>
 </html>
