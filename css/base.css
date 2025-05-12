@@ -5,7 +5,7 @@
   --color-brown: #805c36;
   --color-pink: #f5a3c9;
   --color-yellow: #fff7eb;
-  --color-nueve: #ec83a9; 
+  --color-nueve: #ec83a9;
 
   --font: "Quicksand", serif;
 }
@@ -30,6 +30,10 @@ ul {
 a {
   text-decoration: none;
   color: var(--color-brown);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 li {
@@ -216,7 +220,6 @@ footer li {
   .footer_right {
     display: flex;
     flex-wrap: wrap;
-
   }
 
   .footer_libro {
