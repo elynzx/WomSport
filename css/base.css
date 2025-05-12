@@ -230,3 +230,17 @@ footer li {
     width: 7rem;
   }
 }
+
+
+@media (max-width: 390px) {
+  footer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer_links {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
