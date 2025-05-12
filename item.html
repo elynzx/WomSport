@@ -21,7 +21,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
     <title>WomSport</title>
   </head>
@@ -29,7 +30,7 @@
   <body>
     <header>
       <center>
-        <p class="delivery">¡Envío gratuito en pedidos superiores a S/200!</p>
+        <p class="delivery">Delivery gratis a partir de S/200</p>
       </center>
       <div class="header_content">
         <nav class="header_nav">
@@ -75,9 +76,18 @@
         />
         <div class="product-info">
           <h1>XXXXXXXXXXXXXXXXXXXXXXXXXXXX</h1>
-          <p style="color: #777;">SKU: 34708610827999</p>
-          <p class="rating">★★★★★ <span>No reseñas</span></p>
-          <p class="price">Precio: <strong>S/ XX.XX</strong></p>
+          <div class="item-resume">
+            <p style="color: #777">SKU: 34708610827999</p>
+            <div class="rating">
+              <span>ㅤ  365</span>
+              <div class="star zero"></div>
+              <div class="star zero"></div>
+              <div class="star zero"></div>
+              <div class="star half"></div>
+              <div class="star full"></div>
+            </div>
+          </div>
+          <div class="price"><span>Precio: </span><strong>S/ XX.XX</strong></div>
 
           <div class="size-selector">
             <p class="size-label">TALLA ROPA:</p>
@@ -96,8 +106,6 @@
             <button onclick="changeQuantity(1)">+</button>
             <button id="add-to-cart" disabled>Selecciona opciones</button>
           </div>
-
-          
         </div>
       </section>
 
@@ -193,7 +201,7 @@
           buttons.forEach((btn) => btn.classList.remove("active"));
           button.classList.add("active");
           addToCart.disabled = false;
-          addToCart.textContent = 'Agregar al carro'
+          addToCart.textContent = "Agregar al carro";
         });
       });
     </script>
