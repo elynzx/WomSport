@@ -5,6 +5,7 @@
   --color-brown: #805c36;
   --color-pink: #f5a3c9;
   --color-yellow: #fff7eb;
+  --color-cuatro: #ffbad3;
   --color-nueve: #ec83a9;
 
   --font: "Quicksand", serif;
@@ -228,5 +229,19 @@ footer li {
   }
   .footer_libro img {
     width: 7rem;
+  }
+}
+
+
+@media (max-width: 390px) {
+  footer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer_links {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
