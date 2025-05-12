@@ -163,7 +163,6 @@ serian las anteriores */
   border: 1px solid #ccc;
   background: #fff;
   cursor: pointer;
-
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -227,14 +226,14 @@ serian las anteriores */
 
 .similar-products h2 {
   font-size: 1.3rem;
-
+  text-align: center;
   width: 95%;
   font-weight: 400;
 }
 
 .products-list {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -251,6 +250,11 @@ serian las anteriores */
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  transition: transform 1s;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
 }
 
 .placeholder {
@@ -261,8 +265,9 @@ serian las anteriores */
 .shopping {
   border: 1px solid var(--color-nueve);
   color: var(--color-nueve);
-
   transition: all 0.2s ease-in-out;
+  border-radius: 18px;
+  font-size: 0.8rem;
 }
 
 .shopping:hover {
@@ -283,5 +288,9 @@ button {
 @media (max-width: 725px) {
   .product-section {
     flex-direction: column;
+  }
+
+  .products-list {
+    gap: 1rem;
   }
 }
