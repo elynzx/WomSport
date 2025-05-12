@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  background-color: #ffaac2;
+  display: block;
 }
 
 .banner img {
@@ -247,7 +247,7 @@ main {
   width: 150px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .banner {
     display: flex;
     flex-direction: column;

@@ -86,7 +86,7 @@ textarea {
   color: var(--color-white);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   section {
     display: flex;
     flex-direction: column;
