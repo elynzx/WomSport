@@ -182,18 +182,7 @@
       </div>
     </footer>
     <script>
-      function changeQuantity(amount) {
-        const quantitySpan = document.getElementById("quantity");
-        let current = parseInt(quantitySpan.innerText);
-        current += amount;
-        if (current < 1) current = 1;
-        quantitySpan.innerText = current;
-      }
-
-      const addToCart = document.getElementById("add-to-cart");
-      const buttons = document.querySelectorAll(".size-btn");
-
-      // Reset state on page load
+      // Reinicia a los valores iniciales
       window.addEventListener("DOMContentLoaded", () => {
         buttons.forEach((btn) => btn.classList.remove("active"));
         addToCart.disabled = true;
@@ -206,6 +195,18 @@
           addToCart.textContent = "Agregar al carro";
         });
       });
+      
+      function changeQuantity(amount) {
+        const quantitySpan = document.getElementById("quantity");
+        let current = parseInt(quantitySpan.innerText);
+        current += amount;
+        if (current < 1) current = 1;
+        quantitySpan.innerText = current;
+      }
+
+      const addToCart = document.getElementById("add-to-cart");
+      const buttons = document.querySelectorAll(".size-btn");
+
 
       function setStars(n) {
         const container = document.getElementById("star-holder");
