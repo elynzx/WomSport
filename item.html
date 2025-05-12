@@ -182,43 +182,69 @@
       </div>
     </footer>
     <script>
-      // Reinicia a los valores iniciales
-      window.addEventListener("DOMContentLoaded", () => {
-        buttons.forEach((btn) => btn.classList.remove("active"));
-        addToCart.disabled = true;
-      });
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          buttons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
-          addToCart.disabled = false;
-          addToCart.textContent = "Agregar al carro";
-        });
-      });
-      
-      function changeQuantity(amount) {
-        const quantitySpan = document.getElementById("quantity");
-        let current = parseInt(quantitySpan.innerText);
-        current += amount;
-        if (current < 1) current = 1;
-        quantitySpan.innerText = current;
-      }
-
+      // Declaramos las variables necesarias
       const addToCart = document.getElementById("add-to-cart");
       const buttons = document.querySelectorAll(".size-btn");
 
+      // Reinicia a los valores iniciales
 
+      // Cuando carga la pagina web (DOM)
+      window.addEventListener("DOMContentLoaded", () => {
+        // Removemos todos los estados activos que hayamos colocado
+        // para la talla
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        addToCart.disabled = true;
+      });
+
+      // añadimos un evento para al presionar una talla
+      // esta talla se seleccione
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // quite la clase active de las demás
+          buttons.forEach((btn) => btn.classList.remove("active"));
+
+          // Añade al boton que hicieron click
+          button.classList.add("active");
+          addToCart.disabled = false;
+
+          // Cambia el texto del carrito
+          addToCart.textContent = "Agregar al carro";
+        });
+      });
+
+      // Creamos una función para cambiar la cantidad
+      function changeQuantity(amount) {
+        // Seleccionamos el objeto
+        const quantitySpan = document.getElementById("quantity");
+
+        // cambiamos según lo indicado en `amount`
+        let current = parseInt(quantitySpan.innerText);
+        current += amount;
+        // No puede ser menor a 1
+        if (current < 1) current = 1;
+        // Ni mayor a 50
+        if (current > 50) current = 50;
+        quantitySpan.innerText = current;
+      }
+
+      // Cambiamos la cantidad de estrellas `n`
       function setStars(n) {
         const container = document.getElementById("star-holder");
+        // Buscamos todas las estrellas dentro del star-holder
         const stars = container.querySelectorAll("div");
 
+        // Removemos las clases
+        // ex. star full: estrella completa
+        // ex. star half: media estrella ...
         stars.forEach((star) => {
           star.classList.remove("full", "half", "zero");
         });
 
+        // calculamos la cantidad de estrellas y el indice de la estrella que seleccionamos
         const total = stars.length;
         const startIndex = total - n;
 
+        // segun el indice es donde nos detenemos y entonces las demas estrellas estarían vacias
         stars.forEach((star, index) => {
           if (index >= startIndex) {
             star.classList.add("full");
