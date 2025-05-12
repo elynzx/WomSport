@@ -111,7 +111,7 @@
               <button id="add-to-cart" disabled>Selecciona opciones</button>
             </div>
           </div>
-          <div id="heart"></div>
+          <div id="heart" onclick="changeHeartState()"></div>
         </div>
       </section>
 
@@ -256,6 +256,15 @@
             star.classList.add("zero");
           }
         });
+      }
+
+      function changeHeartState() {
+        const heart = document.getElementById("heart");
+        if (heart.classList.contains("active")) {
+          heart.classList.remove("active");
+        } else {
+          heart.classList.add("active");
+        }
       }
     </script>
   </body>

@@ -51,10 +51,6 @@ main * {
   background-image: url("../../img/favs/favs.svg");
 }
 
-#heart:hover {
-  background-image: url("../../img/favs/favs.svg");
-}
-
 /* .product-info {
   width: 120%;
 } */
