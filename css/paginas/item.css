@@ -31,8 +31,32 @@ main * {
   border-radius: 8px;
 }
 
+.info {
+  display: flex;
+  direction: row;
+  gap: 0.2rem;
+}
+
+#heart {
+  background-image: url("../../img/favs/favs0.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.15rem;
+  width: 1.15rem;
+  transition: background-image 0.3s ease;
+}
+
+#heart.active {
+  background-image: url("../../img/favs/favs.svg");
+}
+
+#heart:hover {
+  background-image: url("../../img/favs/favs.svg");
+}
+
 /* .product-info {
-  width: 35dvw;
+  width: 120%;
 } */
 
 .product-info h1 {
