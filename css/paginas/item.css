@@ -51,6 +51,8 @@ main * {
   font-size: 0.9rem;
   color: #888;
   display: flex;
+  /* Revertimos la dirección para poder seleccionar 
+  visualmente los anteriores */
   direction: rtl;
   /* gap: 0.2rem; */
   margin: 0;
@@ -89,6 +91,11 @@ main * {
 /* Cuando seleccione una estrella
 todas las anteriores se vuelven
 estrellas completas */
+
+/* Se selecciona .star:hover
+y como (visualmente) esta revertido
+todas las posteriores (~) 
+serian las anteriores */
 .star:hover,
 .star:hover ~ .star {
   background-image: url("../../img/estrellas/estrella1.svg");
