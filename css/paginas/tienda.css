@@ -102,17 +102,17 @@
 
 /*DESCUENTO*/
 
-.discount-content {
+.banner-content {
   width: 100%;
 }
 
-.discount-content img {
+.banner-content img {
   width: 100%;
 }
 
 /*FAVORITOS*/
 .favorites {
-  padding: 0 8rem;
+  padding: 4rem 8rem;
 }
 
 .favorites h2{
