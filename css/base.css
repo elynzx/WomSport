@@ -33,17 +33,12 @@ a {
   color: var(--color-brown);
 }
 
-a:hover {
-  text-decoration: underline;
-}
+
 
 li {
   list-style: none;
 }
 li a {
-  color: var(--color-brown);
-}
-a:hover {
   color: var(--color-brown);
 }
 
@@ -94,6 +89,11 @@ button {
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }
+
+.header_nav a:hover {
+  text-decoration: underline;
+}
+
 
 .header_right {
   display: flex;

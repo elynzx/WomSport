@@ -1,0 +1,97 @@
+.product_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.product_image {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product_image:hover {
+  transform: scale(1.05);
+}
+
+.product_image img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  filter: drop-shadow(4px 4px 6px rgb(0, 0, 0, 0.1));
+  border: 2px solid var(--color-pinkLight);
+}
+
+.dscto {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  background-color: rgb(255 131 174);
+  padding: 2px 14px;
+  border-radius: 14px;
+  font-weight: bolder;
+  color: white;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.product_description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0.5rem;
+}
+
+.tittle {
+  font-size: 20px;
+  color: var(--color-pink);
+}
+
+.tittle a:hover {
+  text-decoration: underline;
+}
+
+
+.description {
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product_card i {
+  color: var(--color-pink);
+}
+
+.product_card i:hover {
+  transform: scale(1.4);
+  transition: transform 0.5s ease;
+}
+
+.btn-agregar {
+  cursor: pointer;
+}
+
+.prices {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.price_before {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.price_after {
+  font-weight: 800;
+}
+
