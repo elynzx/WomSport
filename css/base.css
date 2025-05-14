@@ -141,8 +141,9 @@ button {
 .nav-route{
   display: flex;
   width: 100%;
-  padding: 2rem 3rem;
+  padding: rem 3rem;
   gap: 1rem;
+  margin-left: 5rem;
 }
 
 
