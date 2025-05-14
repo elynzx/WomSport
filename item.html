@@ -69,15 +69,31 @@
       </div>
     </header>
     <main class="container">
+
+      <span class="nav-route">
+        <a href="tienda.html">Tienda</a>
+        <p>/</p>
+        <a href="faldas.html">Faldas</a>
+      </span>
+
+
       <section class="product-section">
-        <img
-          src="./img/prod/Group 1660.png"
-          alt="Falda deportiva"
-          class="product-image"
-        />
+        <div class="product-images">
+          <div class="image-preview">
+            <img src="img/prod/falda/f1.webp" alt="" />
+            <img src="img/prod/falda/f2.webp" alt="" />
+            <img src="img/prod/falda/f3.webp" alt="" />
+          </div>
+          <div class="product-image">
+            <img src="img/prod/Frame 23.png" alt="Falda deportiva" />
+          </div>
+        </div>
         <div class="info">
           <div class="product-info">
-            <h1>Falda deportiva WomFit</h1>
+            <div class="info-top">
+              <h1>Falda deportiva WomFit</h1>
+              <div id="heart" onclick="changeHeartState()"></div>
+            </div>
             <div class="item-resume">
               <p style="color: #777">SKU: 347086</p>
               <div id="star-holder" class="rating">
@@ -95,7 +111,7 @@
 
             <div class="size-selector">
               <p class="size-label">TALLA ROPA:</p>
-              <p class="size-warning">DEBES ELEGIR TU TALLA</p>
+              <p class="size-warning">*DEBES ELEGIR TU TALLA</p>
               <div class="sizes">
                 <button class="size-btn">XS</button>
                 <button class="size-btn">S</button>
@@ -111,7 +127,6 @@
               <button id="add-to-cart" disabled>Selecciona opciones</button>
             </div>
           </div>
-          <div id="heart" onclick="changeHeartState()"></div>
         </div>
       </section>
 
