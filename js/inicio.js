@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     brandLogos.forEach(logo => {
         logo.addEventListener("click", function (event) {
             event.preventDefault();
-            const brandName = this.querySelector("img").alt; // Obtener el nombre de la marca desde `alt`
-            window.location.href = `tienda.html?marca=${encodeURIComponent(brandName)}`; // Redirige con la marca en la URL
+            const brandName = this.querySelector("img").alt; 
+            window.location.href = `tienda.html?marca=${encodeURIComponent(brandName)}`;
         });
     });
 });

@@ -1,39 +1,43 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const brandSelected = urlParams.get("marca");
-    const categorySelected = urlParams.get("categoria");
+  const urlParams = new URLSearchParams(window.location.search);
+  let productosCompleto = [];
+  let productosActuales = [];
 
-    fetch("data/productos.json")
-        .then(response => response.json())
-        .then(productos => {
-            let productosFiltrados = brandSelected
-                ? productos.filter(producto => producto.marca === brandSelected)
-                : categorySelected
-                ? productos.filter(producto => producto.categoria === categorySelected)
-                : productos;
+  fetch("data/productos.json")
+    .then(response => response.json())
+    .then(productos => {
+      productosCompleto = productos;
 
-            mostrarProductos(productosFiltrados);
-        });
+      const brandSelected = urlParams.get("marca");
+      const categorySelected = urlParams.get("categoria");
 
-    function mostrarProductos(lista) {
-        const contenedor = document.querySelector(".store-products");
-        contenedor.innerHTML = "";  
+      productosActuales = brandSelected
+        ? productosCompleto.filter(producto => producto.marca === brandSelected)
+        : categorySelected
+          ? productosCompleto.filter(producto => producto.categoria === categorySelected)
+          : productosCompleto;
 
-        lista.forEach(producto => {
-            const { id, nombre, descripcion, imagen, precio_actual, precio_anterior, marca, etiqueta_publicidad, descuento } = producto;
+      mostrarProductos(productosActuales);
+    });
 
-            let etiqueta = "";
-            if (etiqueta_publicidad) {
-                etiqueta = `<span class="product-card__label">${etiqueta_publicidad}</span>`;
-            } else if (descuento) {
-                etiqueta = `<span class="product-card__label">${descuento}</span>`;
-            }
+  function mostrarProductos(lista) {
+    const contenedor = document.querySelector(".store-products");
+    contenedor.innerHTML = "";
 
-            let precioAntes = precio_anterior 
-                ? `<p class="product-card__price--old">S/${precio_anterior}</p>` 
-                : "";
+    lista.forEach(producto => {
+      const { id, nombre, descripcion, imagen, precio_actual, precio_anterior, etiqueta_publicidad, descuento } = producto;
 
-            contenedor.innerHTML += `
+      let etiqueta = etiqueta_publicidad
+        ? `<span class="product-card__label">${etiqueta_publicidad}</span>`
+        : descuento
+          ? `<span class="product-card__label">${descuento}</span>`
+          : "";
+
+      let precioAntes = precio_anterior
+        ? `<p class="product-card__price--old">S/${precio_anterior}</p>`
+        : "";
+
+      contenedor.innerHTML += `
                 <div class="product-card">
                     <div class="product-card__image">
                         <a href="item.html?id=${id}">
@@ -46,11 +50,77 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="product-card__text">${descripcion}</p>
                         <div class="product-card__prices">
                             <p class="product-card__price--current">S/${precio_actual}</p>
-                            ${precioAntes} 
+                            ${precioAntes}
                         </div>
                     </div>
                 </div>
             `;
-        });
+    });
+  }
+
+  /* Limpiar filtros */
+  const clearFiltersBtn = document.getElementById("clear-filters");
+  clearFiltersBtn.addEventListener("click", function () {
+    document.getElementById("category").value = "todas";
+    document.getElementById("brand").value = "todas";
+    document.getElementById("sort").value = "relevancia";
+
+    productosActuales = [...productosCompleto];
+    mostrarProductos(productosActuales);
+  });
+
+  /* Categorías */
+  const categorias = document.querySelectorAll(".cat_button");
+  categorias.forEach(categoria => {
+    categoria.addEventListener("click", function (event) {
+      event.preventDefault();
+      const nombreCategoria = this.id;
+
+      productosActuales = productosCompleto.filter(producto => producto.categoria === nombreCategoria);
+      mostrarProductos(productosActuales);
+    });
+  });
+
+  /* Filtros */
+  const sortSelect = document.getElementById("sort");
+  const categorySelect = document.getElementById("category");
+  const brandSelect = document.getElementById("brand");
+
+  sortSelect.addEventListener("change", () => aplicarFiltros());
+  categorySelect.addEventListener("change", () => aplicarFiltros());
+  brandSelect.addEventListener("change", () => aplicarFiltros());
+
+  function aplicarFiltros() {
+    let listaFiltrada = [...productosActuales];
+
+    const categoriaSeleccionada = categorySelect.value;
+    if (categoriaSeleccionada === "todas") {
+      listaFiltrada = [...productosCompleto];
+      productosActuales = listaFiltrada;
+    } else {
+      listaFiltrada = listaFiltrada.filter(p => p.categoria === categoriaSeleccionada);
     }
+
+    const marcaSeleccionada = brandSelect.value;
+    if (marcaSeleccionada !== "todas") {
+      listaFiltrada = listaFiltrada.filter(p => p.marca === marcaSeleccionada);
+    }
+
+    const ordenSeleccionado = sortSelect.value;
+    if (ordenSeleccionado === "precio-asc") {
+      listaFiltrada.sort((a, b) => a.precio_actual - b.precio_actual);
+    } else if (ordenSeleccionado === "precio-desc") {
+      listaFiltrada.sort((a, b) => b.precio_actual - a.precio_actual);
+    } else if (ordenSeleccionado === "calificacion") {
+      listaFiltrada.sort((a, b) => b.calificacion - a.calificacion);
+    } else if (ordenSeleccionado === "novedades") {
+      listaFiltrada.sort((a, b) => {
+        const tieneEtiquetaA = a.etiqueta_publicidad ? -1 : 1;
+        const tieneEtiquetaB = b.etiqueta_publicidad ? -1 : 1;
+        return tieneEtiquetaA - tieneEtiquetaB;
+      });
+    }
+
+    mostrarProductos(listaFiltrada);
+  }
 });

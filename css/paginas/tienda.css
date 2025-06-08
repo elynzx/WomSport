@@ -45,7 +45,6 @@
   }
 }
 
-
 /*DESCUENTO*/
 
 .banner-content {
@@ -61,7 +60,7 @@
   padding: 4rem 8rem;
 }
 
-.favorites h2{
+.favorites h2 {
   text-transform: uppercase;
 }
 
@@ -93,7 +92,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem ;
+  padding: 2rem;
   /* gap: 1rem; */
 }
 
@@ -109,7 +108,7 @@
   height: 55dvh;
   display: block;
   transition: transform 0.3s ease;
- /*  border: 1px solid white; */
+  /*  border: 1px solid white; */
   /* border-radius: 20px; */
 }
 /* .categ_products img:hover {
@@ -135,10 +134,64 @@
   transform: scale(1.05);
 }
 
-
-h2{
-  margin-top: 50px;
+h2 {
+  margin: 50px;
 }
+
+/* FILTROS */
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0rem 9rem;
+  align-items: end;
+}
+.filter-types {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-types__content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.filter-right{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 2rem;
+}
+
+.filter-clear{
+  background-color: var(--color-pinkLight);
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.filters label{
+  margin-right: 0.5rem;
+}
+
+.filters select {
+  width: 200px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 1rem;
+  outline: none;
+  background-color: transparent;
+}
+.filters option {
+  background-color: white;
+}
+
+
 
 /*TIENDA*/
 
@@ -153,10 +206,6 @@ h2{
   gap: 6rem;
   padding: 5rem;
 }
-
-
-
-
 
 @media (max-width: 767px) {
   .categories_type {
