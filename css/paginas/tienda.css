@@ -45,60 +45,6 @@
   }
 }
 
-/*CATEGORIAS*/
-
-.categories {
-  display: flex;
-  flex-direction: column;
-  margin: 5rem 0;
-  width: 100%;
-}
-
-.categories h2{
-  text-transform: uppercase;
-}
-
-.categories_type {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0 auto;
-  padding: 4rem 5rem;
-}
-
-.categ_products {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24%;
-  margin-bottom: 20px;
-
-}
-
-.categ_products img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.cat_button {
-  position: absolute;
-    text-transform: uppercase;
-  top: 70%;
-  padding: 1rem 2rem;
-  background-color: var(--color-white);
-  font-weight: 800;
-  z-index: 1;
-  width: 220px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.cat_button:hover {
-  background-color: var(--color-pinkLight);
-  transform: scale(1.05);
-}
 
 /*DESCUENTO*/
 

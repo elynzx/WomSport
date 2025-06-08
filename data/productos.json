@@ -1,0 +1,1217 @@
+[
+    {
+        "id": 1,
+        "nombre": "Vestido PowerMove",
+        "descripcion": "Diseño atlético con tecnología transpirable.",
+        "precio_actual": 165.18,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/faldas/ves02.jpg",
+        "miniaturas": [
+            "img/productos/faldas/ves02-a.jpg",
+            "img/productos/faldas/ves02-b.jpg",
+            "img/productos/faldas/ves02-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 44,
+        "sku": "FALD861384",
+        "calificacion": 4.7,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Reebok"
+    },
+    {
+        "id": 2,
+        "nombre": "Falda SwiftFlex",
+        "descripcion": "Ideal para entrenamientos de alta intensidad.",
+        "precio_actual": 150.45,
+        "precio_anterior": 200.6,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/faldas/fal02.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal02-a.jpg",
+            "img/productos/faldas/fal02-b.jpg",
+            "img/productos/faldas/fal02-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 23,
+        "sku": "FALD970443",
+        "calificacion": 4.9,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Adidas"
+    },
+    {
+        "id": 3,
+        "nombre": "Falda BreezeCore",
+        "descripcion": "Tejido elástico que se adapta al cuerpo.",
+        "precio_actual": 124.53,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/faldas/fal03.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal03-a.jpg",
+            "img/productos/faldas/fal03-b.jpg",
+            "img/productos/faldas/fal03-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 49,
+        "sku": "FALD170863",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Reebok"
+    },
+    {
+        "id": 4,
+        "nombre": "Falda MotionAir",
+        "descripcion": "Costuras planas para mayor comodidad.",
+        "precio_actual": 152.58,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/faldas/fal04.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal04-a.jpg",
+            "img/productos/faldas/fal04-b.jpg",
+            "img/productos/faldas/fal04-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 22,
+        "sku": "FALD732992",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 5,
+        "nombre": "Falda VitalFit",
+        "descripcion": "Secado rápido y resistencia al sudor.",
+        "precio_actual": 172.94,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/faldas/fal05.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal05-a.jpg",
+            "img/productos/faldas/fal05-b.jpg",
+            "img/productos/faldas/fal05-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 29,
+        "sku": "FALD982023",
+        "calificacion": 4.4,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Lululemon"
+    },
+    {
+        "id": 6,
+        "nombre": "Falda UrbanSpin",
+        "descripcion": "Ligereza y frescura para rutinas diarias.",
+        "precio_actual": 178.55,
+        "precio_anterior": 238.07,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/faldas/fal06.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal06-a.jpg",
+            "img/productos/faldas/fal06-b.jpg",
+            "img/productos/faldas/fal06-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 26,
+        "sku": "FALD107374",
+        "calificacion": 4.8,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 7,
+        "nombre": "Vestido AeroStep",
+        "descripcion": "Ajuste ergonómico para libertad de movimiento.",
+        "precio_actual": 184.92,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/faldas/ves01.jpg",
+        "miniaturas": [
+            "img/productos/faldas/ves01-a.jpg",
+            "img/productos/faldas/ves01-b.jpg",
+            "img/productos/faldas/ves01-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 17,
+        "sku": "FALD311924",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Under Armour"
+    },
+    {
+        "id": 8,
+        "nombre": "Falda GlideForm",
+        "descripcion": "Diseño moderno con estilo deportivo.",
+        "precio_actual": 144.95,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/faldas/fal08.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal08-a.jpg",
+            "img/productos/faldas/fal08-b.jpg",
+            "img/productos/faldas/fal08-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 45,
+        "sku": "FALD841925",
+        "calificacion": 4.4,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 9,
+        "nombre": "Falda ZenSport",
+        "descripcion": "Composición ecológica con materiales reciclados.",
+        "precio_actual": 128.48,
+        "precio_anterior": 171.31,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/faldas/fal09.jpg",
+        "miniaturas": [
+            "img/productos/faldas/fal09-a.jpg",
+            "img/productos/faldas/fal09-b.jpg",
+            "img/productos/faldas/fal09-c.jpg"
+        ],
+        "categoria": "Faldas",
+        "stock": 34,
+        "sku": "FALD147975",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 10,
+        "nombre": "Top FlexZone",
+        "descripcion": "Diseño atlético con tecnología transpirable.",
+        "precio_actual": 157.43,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/topspolos/top01.png",
+        "miniaturas": [
+            "img/productos/topspolos/top01-a.png",
+            "img/productos/topspolos/top01-b.png",
+            "img/productos/topspolos/top01-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 48,
+        "sku": "TOPS922347",
+        "calificacion": 4.8,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 11,
+        "nombre": "Polo DryFlow",
+        "descripcion": "Ideal para entrenamientos de alta intensidad.",
+        "precio_actual": 153.1,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/topspolos/pol01.png",
+        "miniaturas": [
+            "img/productos/topspolos/pol01-a.png",
+            "img/productos/topspolos/pol01-b.png",
+            "img/productos/topspolos/pol01-c.png"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 22,
+        "sku": "TOPS225325",
+        "calificacion": 4.2,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 12,
+        "nombre": "Top CorePulse",
+        "descripcion": "Tejido elástico que se adapta al cuerpo.",
+        "precio_actual": 164.04,
+        "precio_anterior": 218.72,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/topspolos/top02.jpg",
+        "miniaturas": [
+            "img/productos/topspolos/top02-a.jpg",
+            "img/productos/topspolos/top02-b.jpg",
+            "img/productos/topspolos/top02-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 46,
+        "sku": "TOPS859215",
+        "calificacion": 4.7,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Under Armour"
+    },
+    {
+        "id": 13,
+        "nombre": "Polo FitEase",
+        "descripcion": "Costuras planas para mayor comodidad.",
+        "precio_actual": 94.98,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/topspolos/pol02.png",
+        "miniaturas": [
+            "img/productos/topspolos/pol02-a.png",
+            "img/productos/topspolos/pol02-b.png",
+            "img/productos/topspolos/pol02-c.png"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 34,
+        "sku": "TOPS451741",
+        "calificacion": 4.1,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 14,
+        "nombre": "Top MoveLight",
+        "descripcion": "Secado rápido y resistencia al sudor.",
+        "precio_actual": 191.22,
+        "precio_anterior": 254.96,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/topspolos/top03.jpg",
+        "miniaturas": [
+            "img/productos/topspolos/top03-a.jpg",
+            "img/productos/topspolos/top03-b.jpg",
+            "img/productos/topspolos/top03-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 39,
+        "sku": "TOPS563427",
+        "calificacion": 4.1,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 15,
+        "nombre": "Polo UltraRun",
+        "descripcion": "Ligereza y frescura para rutinas diarias.",
+        "precio_actual": 144.39,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/topspolos/pol03.jpg",
+        "miniaturas": [
+            "img/productos/topspolos/pol03-a.jpg",
+            "img/productos/topspolos/pol03-b.jpg",
+            "img/productos/topspolos/pol03-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 31,
+        "sku": "TOPS709237",
+        "calificacion": 4.4,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 16,
+        "nombre": "Top AeroCool",
+        "descripcion": "Ajuste ergonómico para libertad de movimiento.",
+        "precio_actual": 90.48,
+        "precio_anterior": 120.64,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/topspolos/top04.jpg",
+        "miniaturas": [
+            "img/productos/topspolos/top04-a.jpg",
+            "img/productos/topspolos/top04-b.jpg",
+            "img/productos/topspolos/top04-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 43,
+        "sku": "TOPS506093",
+        "calificacion": 4.6,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 17,
+        "nombre": "Polo ZenMotion",
+        "descripcion": "Diseño moderno con estilo deportivo.",
+        "precio_actual": 99.52,
+        "precio_anterior": 132.69,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/topspolos/pol04.jpg",
+        "miniaturas": [
+            "img/productos/topspolos/pol04-a.jpg",
+            "img/productos/topspolos/pol04-b.jpg",
+            "img/productos/topspolos/pol04-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 26,
+        "sku": "TOPS682000",
+        "calificacion": 4.2,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Under Armour"
+    },
+    {
+        "id": 18,
+        "nombre": "Top EnergyFit",
+        "descripcion": "Composición ecológica con materiales reciclados.",
+        "precio_actual": 137.33,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/topspolos/top05.jpg",
+        "miniaturas": [
+            "img/productos/topspolos/top05-a.jpg",
+            "img/productos/topspolos/top05-b.jpg",
+            "img/productos/topspolos/top05-c.jpg"
+        ],
+        "categoria": "Tops/Polos",
+        "stock": 41,
+        "sku": "TOPS133039",
+        "calificacion": 4.2,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Adidas"
+    },
+    {
+        "id": 19,
+        "nombre": "Pantalón StreetTrack",
+        "descripcion": "Diseño atlético con tecnología transpirable.",
+        "precio_actual": 196.31,
+        "precio_anterior": 261.75,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/pantalones/pan01.jpg",
+        "miniaturas": [
+            "img/productos/pantalones/pan01-a.jpg",
+            "img/productos/pantalones/pan01-b.jpg",
+            "img/productos/pantalones/pan01-c.jpg"
+        ],
+        "categoria": "Pantalones",
+        "stock": 40,
+        "sku": "PANT262404",
+        "calificacion": 4.3,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 20,
+        "nombre": "Leggins PowerFit",
+        "descripcion": "Ideal para entrenamientos de alta intensidad.",
+        "precio_actual": 178.3,
+        "precio_anterior": 237.73,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/pantalones/leg01.png",
+        "miniaturas": [
+            "img/productos/pantalones/leg01-a.png",
+            "img/productos/pantalones/leg01-b.png",
+            "img/productos/pantalones/leg01-c.png"
+        ],
+        "categoria": "Pantalones",
+        "stock": 27,
+        "sku": "PANT441176",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 21,
+        "nombre": "Pantalón FlexRun",
+        "descripcion": "Tejido elástico que se adapta al cuerpo.",
+        "precio_actual": 142.64,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/pantalones/pan02.png",
+        "miniaturas": [
+            "img/productos/pantalones/pan02-a.png",
+            "img/productos/pantalones/pan02-b.png",
+            "img/productos/pantalones/pan02-c.png"
+        ],
+        "categoria": "Pantalones",
+        "stock": 36,
+        "sku": "PANT476729",
+        "calificacion": 4.8,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 22,
+        "nombre": "Leggins MoveShape",
+        "descripcion": "Costuras planas para mayor comodidad.",
+        "precio_actual": 146.47,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/pantalones/leg02.png",
+        "miniaturas": [
+            "img/productos/pantalones/leg02-a.png",
+            "img/productos/pantalones/leg02-b.png",
+            "img/productos/pantalones/leg02-c.png"
+        ],
+        "categoria": "Pantalones",
+        "stock": 50,
+        "sku": "PANT606643",
+        "calificacion": 4.8,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 23,
+        "nombre": "Pantalón DryPro",
+        "descripcion": "Secado rápido y resistencia al sudor.",
+        "precio_actual": 190.61,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/pantalones/pan03.png",
+        "miniaturas": [
+            "img/productos/pantalones/pan03-a.png",
+            "img/productos/pantalones/pan03-b.png",
+            "img/productos/pantalones/pan03-c.png"
+        ],
+        "categoria": "Pantalones",
+        "stock": 21,
+        "sku": "PANT941499",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Reebok"
+    },
+    {
+        "id": 24,
+        "nombre": "Leggins FitCore",
+        "descripcion": "Ligereza y frescura para rutinas diarias.",
+        "precio_actual": 168.81,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/pantalones/leg03.png",
+        "miniaturas": [
+            "img/productos/pantalones/leg03-a.png",
+            "img/productos/pantalones/leg03-b.png",
+            "img/productos/pantalones/leg03-c.png"
+        ],
+        "categoria": "Pantalones",
+        "stock": 49,
+        "sku": "PANT303198",
+        "calificacion": 4.6,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 25,
+        "nombre": "Pantalón UrbanGym",
+        "descripcion": "Ajuste ergonómico para libertad de movimiento.",
+        "precio_actual": 99.46,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/pantalones/pan04.jpg",
+        "miniaturas": [
+            "img/productos/pantalones/pan04-a.jpg",
+            "img/productos/pantalones/pan04-b.jpg",
+            "img/productos/pantalones/pan04-c.jpg"
+        ],
+        "categoria": "Pantalones",
+        "stock": 30,
+        "sku": "PANT614379",
+        "calificacion": 4.3,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Reebok"
+    },
+    {
+        "id": 26,
+        "nombre": "Leggins CoolMove",
+        "descripcion": "Diseño moderno con estilo deportivo.",
+        "precio_actual": 122.33,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/pantalones/leg04.jpg",
+        "miniaturas": [
+            "img/productos/pantalones/leg04-a.jpg",
+            "img/productos/pantalones/leg04-b.jpg",
+            "img/productos/pantalones/leg04-c.jpg"
+        ],
+        "categoria": "Pantalones",
+        "stock": 45,
+        "sku": "PANT944486",
+        "calificacion": 4.8,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 27,
+        "nombre": "Pantalón ZenFit",
+        "descripcion": "Composición ecológica con materiales reciclados.",
+        "precio_actual": 114.72,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/pantalones/pan05.jpg",
+        "miniaturas": [
+            "img/productos/pantalones/pan05-a.jpg",
+            "img/productos/pantalones/pan05-b.jpg",
+            "img/productos/pantalones/pan05-c.jpg"
+        ],
+        "categoria": "Pantalones",
+        "stock": 26,
+        "sku": "PANT396066",
+        "calificacion": 4.1,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 28,
+        "nombre": "Casaca UrbanRunner",
+        "descripcion": "Diseño atlético con tecnología transpirable.",
+        "precio_actual": 191.9,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/casacas/cas01.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas01-a.jpg",
+            "img/productos/casacas/cas01-b.jpg",
+            "img/productos/casacas/cas01-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 28,
+        "sku": "CASA143675",
+        "calificacion": 4.2,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 29,
+        "nombre": "Casaca LightWind",
+        "descripcion": "Ideal para entrenamientos de alta intensidad.",
+        "precio_actual": 155.05,
+        "precio_anterior": 206.73,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/casacas/cas02.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas02-a.jpg",
+            "img/productos/casacas/cas02-b.jpg",
+            "img/productos/casacas/cas02-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 36,
+        "sku": "CASA881528",
+        "calificacion": 4.4,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Adidas"
+    },
+    {
+        "id": 30,
+        "nombre": "Casaca DryBoost",
+        "descripcion": "Tejido elástico que se adapta al cuerpo.",
+        "precio_actual": 160.14,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/casacas/cas03.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas03-a.jpg",
+            "img/productos/casacas/cas03-b.jpg",
+            "img/productos/casacas/cas03-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 35,
+        "sku": "CASA962889",
+        "calificacion": 4.6,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 31,
+        "nombre": "Casaca FlexZone",
+        "descripcion": "Costuras planas para mayor comodidad.",
+        "precio_actual": 163.31,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/casacas/cas04.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas04-a.jpg",
+            "img/productos/casacas/cas04-b.jpg",
+            "img/productos/casacas/cas04-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 31,
+        "sku": "CASA901612",
+        "calificacion": 4.3,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 32,
+        "nombre": "Casaca StormFit",
+        "descripcion": "Secado rápido y resistencia al sudor.",
+        "precio_actual": 132.91,
+        "precio_anterior": 177.21,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/casacas/cas05.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas05-a.jpg",
+            "img/productos/casacas/cas05-b.jpg",
+            "img/productos/casacas/cas05-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 48,
+        "sku": "CASA836930",
+        "calificacion": 4.5,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 33,
+        "nombre": "Casaca WindGuard",
+        "descripcion": "Ligereza y frescura para rutinas diarias.",
+        "precio_actual": 169.15,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/casacas/cas06.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas06-a.jpg",
+            "img/productos/casacas/cas06-b.jpg",
+            "img/productos/casacas/cas06-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 25,
+        "sku": "CASA232737",
+        "calificacion": 4.6,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 34,
+        "nombre": "Casaca ActiveFlow",
+        "descripcion": "Ajuste ergonómico para libertad de movimiento.",
+        "precio_actual": 178.0,
+        "precio_anterior": 237.33,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/casacas/cas07.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas07-a.jpg",
+            "img/productos/casacas/cas07-b.jpg",
+            "img/productos/casacas/cas07-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 16,
+        "sku": "CASA248857",
+        "calificacion": 4.3,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 35,
+        "nombre": "Casaca ZenShield",
+        "descripcion": "Diseño moderno con estilo deportivo.",
+        "precio_actual": 148.61,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/casacas/cas08.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas08-a.jpg",
+            "img/productos/casacas/cas08-b.jpg",
+            "img/productos/casacas/cas08-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 31,
+        "sku": "CASA376705",
+        "calificacion": 4.7,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Nike"
+    },
+    {
+        "id": 36,
+        "nombre": "Casaca RunMotion",
+        "descripcion": "Composición ecológica con materiales reciclados.",
+        "precio_actual": 186.59,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/casacas/cas09.jpg",
+        "miniaturas": [
+            "img/productos/casacas/cas09-a.jpg",
+            "img/productos/casacas/cas09-b.jpg",
+            "img/productos/casacas/cas09-c.jpg"
+        ],
+        "categoria": "Casacas",
+        "stock": 31,
+        "sku": "CASA369148",
+        "calificacion": 4.7,
+        "opiniones": null,
+        "tallas": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "marca": "Adidas"
+    },
+    {
+        "id": 37,
+        "nombre": "Set PowerGlow",
+        "descripcion": "Diseño atlético con tecnología transpirable.",
+        "precio_actual": 170.33,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set01.png",
+        "miniaturas": [
+            "img/productos/conjuntos/set01-a.png",
+            "img/productos/conjuntos/set01-b.png",
+            "img/productos/conjuntos/set01-c.png"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 49,
+        "sku": "CONJ105922",
+        "calificacion": 4.1,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 38,
+        "nombre": "Set ZenBalance",
+        "descripcion": "Ideal para entrenamientos de alta intensidad.",
+        "precio_actual": 171.41,
+        "precio_anterior": 228.55,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/conjuntos/set02.png",
+        "miniaturas": [
+            "img/productos/conjuntos/set02-a.png",
+            "img/productos/conjuntos/set02-b.png",
+            "img/productos/conjuntos/set02-c.png"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 49,
+        "sku": "CONJ886935",
+        "calificacion": 4.9,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    },
+    {
+        "id": 39,
+        "nombre": "Set AeroMove",
+        "descripcion": "Tejido elástico que se adapta al cuerpo.",
+        "precio_actual": 107.88,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set03.jpg",
+        "miniaturas": [
+            "img/productos/conjuntos/set03-a.jpg",
+            "img/productos/conjuntos/set03-b.jpg",
+            "img/productos/conjuntos/set03-c.jpg"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 24,
+        "sku": "CONJ562988",
+        "calificacion": 4.3,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Under Armour"
+    },
+    {
+        "id": 40,
+        "nombre": "Set VitalFit",
+        "descripcion": "Costuras planas para mayor comodidad.",
+        "precio_actual": 161.49,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set04.jpg",
+        "miniaturas": [
+            "img/productos/conjuntos/set04-a.jpg",
+            "img/productos/conjuntos/set04-b.jpg",
+            "img/productos/conjuntos/set04-c.jpg"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 19,
+        "sku": "CONJ779781",
+        "calificacion": 4.6,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Reebok"
+    },
+    {
+        "id": 41,
+        "nombre": "Set StreetVibe",
+        "descripcion": "Secado rápido y resistencia al sudor.",
+        "precio_actual": 167.7,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set05.png",
+        "miniaturas": [
+            "img/productos/conjuntos/set05-a.png",
+            "img/productos/conjuntos/set05-b.png",
+            "img/productos/conjuntos/set05-c.png"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 36,
+        "sku": "CONJ272168",
+        "calificacion": 4.8,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 42,
+        "nombre": "Set FitLine",
+        "descripcion": "Ligereza y frescura para rutinas diarias.",
+        "precio_actual": 97.49,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set06.jpg",
+        "miniaturas": [
+            "img/productos/conjuntos/set06-a.jpg",
+            "img/productos/conjuntos/set06-b.jpg",
+            "img/productos/conjuntos/set06-c.jpg"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 43,
+        "sku": "CONJ945647",
+        "calificacion": 4.3,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Puma"
+    },
+    {
+        "id": 43,
+        "nombre": "Set MotionSync",
+        "descripcion": "Ajuste ergonómico para libertad de movimiento.",
+        "precio_actual": 173.83,
+        "precio_anterior": 231.77,
+        "etiqueta_publicidad": null,
+        "descuento": "-25%",
+        "imagen": "img/productos/conjuntos/set07.jpg",
+        "miniaturas": [
+            "img/productos/conjuntos/set07-a.jpg",
+            "img/productos/conjuntos/set07-b.jpg",
+            "img/productos/conjuntos/set07-c.jpg"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 33,
+        "sku": "CONJ257228",
+        "calificacion": 4.4,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Under Armour"
+    },
+    {
+        "id": 44,
+        "nombre": "Set CoolCore",
+        "descripcion": "Diseño moderno con estilo deportivo.",
+        "precio_actual": 195.66,
+        "precio_anterior": null,
+        "etiqueta_publicidad": null,
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set08.jpg",
+        "miniaturas": [
+            "img/productos/conjuntos/set08-a.jpg",
+            "img/productos/conjuntos/set08-b.jpg",
+            "img/productos/conjuntos/set08-c.jpg"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 18,
+        "sku": "CONJ964239",
+        "calificacion": 4.4,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Adidas"
+    },
+    {
+        "id": 45,
+        "nombre": "Set UrbanEnergy",
+        "descripcion": "Composición ecológica con materiales reciclados.",
+        "precio_actual": 103.09,
+        "precio_anterior": null,
+        "etiqueta_publicidad": "NUEVO!",
+        "descuento": null,
+        "imagen": "img/productos/conjuntos/set09.jpg",
+        "miniaturas": [
+            "img/productos/conjuntos/set09-a.jpg",
+            "img/productos/conjuntos/set09-b.jpg",
+            "img/productos/conjuntos/set09-c.jpg"
+        ],
+        "categoria": "Conjuntos",
+        "stock": 19,
+        "sku": "CONJ995158",
+        "calificacion": 4.7,
+        "opiniones": null,
+        "tallas": [
+            "XS",
+            "S",
+            "M",
+            "L"
+        ],
+        "marca": "Tory Sport"
+    }
+]
