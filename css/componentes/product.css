@@ -39,6 +39,20 @@
   z-index: 10;
 }
 
+.product-card__dscto{
+    position: absolute;
+  top: 20px;
+  left: 25px;
+  background-color: var(--color-pink);
+  padding: 2px 14px;
+  border-radius: 14px;
+  font-weight: bolder;
+  color: white;
+  font-size: 16px;
+  z-index: 10;
+}
+
+
 .product-card__description {
   display: flex;
   flex-direction: column;

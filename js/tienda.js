@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let etiqueta = etiqueta_publicidad
         ? `<span class="product-card__label">${etiqueta_publicidad}</span>`
         : descuento
-          ? `<span class="product-card__label">${descuento}</span>`
+          ? `<span class="product-card__dscto">${descuento}</span>`
           : "";
 
       let precioAntes = precio_anterior

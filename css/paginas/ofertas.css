@@ -51,8 +51,15 @@ h2{
 
 
 /*SALE*/
+.offers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
 
-.sale_products {
+.offers-products {
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -64,20 +71,6 @@ h2{
   padding: 5rem;
 }
 
-
-@media (max-width: 767px) {
-  .categories_type {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .categ_products {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
+.product-card__label {
+  background-color: var(--color-pink);
 }
