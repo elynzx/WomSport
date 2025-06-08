@@ -1,41 +1,19 @@
-fetch("data/productos.json")
-  .then((response) => response.json())
-  .then((productos) => {
-    let productosNuevos = productos.filter(
-      (producto) => producto.etiqueta_publicidad === "NUEVO!"
-    );
-    mostrarNovedades(productosNuevos.slice(0, 9));
-  });
 
-function mostrarNovedades(lista) {
-  const contenedor = document.querySelector(".new-products");
-  contenedor.innerHTML = "";
+/* Productos por marca */
 
-  lista.forEach((producto) => {
-    contenedor.innerHTML += `
-         
-            <div class="product-card">
-                <div class="product-card__image">
-                    <a href="item.html?id=${producto.id}">
-                        <img src="${producto.imagen}" alt="${producto.nombre}" />
-                        <span class="product-card__label">${producto.etiqueta_publicidad}</span>
-                    </a>
-                </div>
-                <div class="product-card__description">
-                    <strong class="product-card__title"><a href="item.html?id=${producto.id}">${producto.nombre}</a></strong>
-                    <p class="product-card__text">${producto.descripcion}</p>
-                    <div class="product-card__details">
-                        <div class="product-card__prices">
-                            <p class="product-card__price--current">S/${producto.precio_actual}</p>
-                            <p class="product-card__price--old"></p>
-                        </div>
-                        <span class="product-card__btn--addcart"><i class="fa-solid fa-cart-plus"></i></span>
-                    </div>
-                </div>
-            </div>
-        `;
-  });
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const brandLogos = document.querySelectorAll(".brands-content__logo a");
+
+    brandLogos.forEach(logo => {
+        logo.addEventListener("click", function (event) {
+            event.preventDefault();
+            const brandName = this.querySelector("img").alt; // Obtener el nombre de la marca desde `alt`
+            window.location.href = `tienda.html?marca=${encodeURIComponent(brandName)}`; // Redirige con la marca en la URL
+        });
+    });
+});
+
+/* Productos con mayor calificación */
 
 document.addEventListener("DOMContentLoaded", function () {
   const contenedorCarrusel = document.querySelector(".carousel__products");
@@ -82,3 +60,47 @@ document.addEventListener("DOMContentLoaded", function () {
     contenedorCarrusel.scrollLeft -= 300; 
   });
 });
+
+
+
+/* Carga de productos nuevos */
+
+fetch("data/productos.json")
+  .then((response) => response.json())
+  .then((productos) => {
+    let productosNuevos = productos.filter(
+      (producto) => producto.etiqueta_publicidad === "NUEVO!"
+    );
+    mostrarNovedades(productosNuevos.slice(0, 9));
+  });
+
+function mostrarNovedades(lista) {
+  const contenedor = document.querySelector(".new-products");
+  contenedor.innerHTML = "";
+
+  lista.forEach((producto) => {
+    contenedor.innerHTML += `
+         
+            <div class="product-card">
+                <div class="product-card__image">
+                    <a href="item.html?id=${producto.id}">
+                        <img src="${producto.imagen}" alt="${producto.nombre}" />
+                        <span class="product-card__label">${producto.etiqueta_publicidad}</span>
+                    </a>
+                </div>
+                <div class="product-card__description">
+                    <strong class="product-card__title"><a href="item.html?id=${producto.id}">${producto.nombre}</a></strong>
+                    <p class="product-card__text">${producto.descripcion}</p>
+                    <div class="product-card__details">
+                        <div class="product-card__prices">
+                            <p class="product-card__price--current">S/${producto.precio_actual}</p>
+                            <p class="product-card__price--old"></p>
+                        </div>
+                        <span class="product-card__btn--addcart"><i class="fa-solid fa-cart-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+        `;
+  });
+}
+

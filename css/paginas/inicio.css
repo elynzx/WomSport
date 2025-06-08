@@ -76,63 +76,6 @@ main {
   height: 100%;
 }
 
-/*CATEGORIAS*/
-
-.categories {
-  display: flex;
-  flex-direction: column;
-  margin: 4rem 0;
-}
-
-.categories h2 {
-  text-transform: uppercase;
-}
-
-.categories_type {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2rem ;
-  /* gap: 1rem; */
-}
-
-.categ_products {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.categ_products img {
-  height: 55dvh;
-  display: block;
-  transition: transform 0.3s ease;
- /*  border: 1px solid white; */
-  /* border-radius: 20px; */
-}
-/* .categ_products img:hover {
-  transform: scale(1.05);
-} */
-
-.cat_button {
-  position: absolute;
-  text-transform: uppercase;
-  top: 80%;
-  padding: 0.5rem 2rem;
-  background-color: var(--color-white);
-  font-size: 1rem;
-  font-weight: 800;
-  z-index: 1;
-  width: 200px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.cat_button:hover {
-  background-color: var(--color-pinkLight);
-  transform: scale(1.05);
-}
 
 /* MÁS VENDIDO */
 .best-seller {
