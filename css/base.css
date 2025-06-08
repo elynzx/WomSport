@@ -2,7 +2,7 @@
   --color-pinkLight: #ffe3f0;
   --color-gray: #d9d0cc;
   --color-white: #ffffff;
-  --color-brown: #704c19;
+  --color-brown: #5e2e12;
   --color-pink: #f5a3c9;
   --color-yellow: #fff7eb;
   --color-cuatro: #ffbad3;
@@ -52,6 +52,7 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  text-transform: uppercase;
   border-radius: 20px;
   border-color: transparent;
   cursor: pointer;

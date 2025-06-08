@@ -81,7 +81,7 @@
 .categories {
   display: flex;
   flex-direction: column;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .categories h2 {
@@ -92,7 +92,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem;
+ 
   /* gap: 1rem; */
 }
 
@@ -105,7 +105,8 @@
 }
 
 .categ_products img {
-  height: 55dvh;
+  height: 60dvh;
+  max-width: 100%;
   display: block;
   transition: transform 0.3s ease;
   /*  border: 1px solid white; */
@@ -191,6 +192,9 @@ h2 {
   background-color: white;
 }
 
+.banner-content{
+  padding: 2rem 9rem;
+}
 
 
 /*TIENDA*/

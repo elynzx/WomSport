@@ -54,26 +54,24 @@ main {
 
 /* Marcas */
 
-.brands {
-  margin: 4rem 0;
-  padding: 2rem;
-}
 
 .brands h2 {
   text-transform: uppercase;
+  margin-top: 4rem;
 }
 
 .brands-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 6rem;
-  height: 7rem;
+  align-items: center;
+  gap: 4rem;
   margin-top: 5rem;
+  height: 50%;
 }
 
-.brands-content img {
-  height: 100%;
+.brands-content__logo img{
+  height: 6rem;
 }
 
 
