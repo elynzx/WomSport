@@ -75,45 +75,45 @@
       <span class="nav-route">
         <a href="tienda.html">Tienda</a>
         <p>/</p>
-        <a href="faldas.html">Faldas</a>
+        <a id="categories">Faldas</a>
       </span>
 
       <section class="product-section">
         <div class="product-images">
-          <div class="image-preview">
+          <div id="image-preview">
             <img src="img/productos/faldas/fal02-a.jpg" alt="" />
             <img src="img/productos/faldas/fal02-b.jpg" alt="" />
             <img src="img/productos/faldas/fal02-c.jpg" alt="" />
           </div>
           <div class="product-image">
-            <img src="img/productos/faldas/fal02.jpg" alt="Falda deportiva" />
+            <img id="main-image" src="img/productos/faldas/fal02.jpg" alt="Falda deportiva" />
           </div>
         </div>
         <div class="info">
           <div class="product-info">
             <div class="info-top">
-              <h1>Falda deportiva WomFit</h1>
+              <h1 id="product_title">Falda deportiva WomFit</h1>
               <div id="heart" onclick="changeHeartState()"></div>
             </div>
             <div class="item-resume">
-              <p style="color: #777">SKU: 347086</p>
+              <p style="color: #777" id="sku_id">SKU: 347086</p>
               <div id="star-holder" class="rating">
-                <span>ㅤ 1.45k</span>
+                <!-- <span> 1.45k</span> -->
                 <div class="star zero" onclick="setStars(5)"></div>
-                <div class="star half" onclick="setStars(4)"></div>
-                <div class="star full" onclick="setStars(3)"></div>
-                <div class="star full" onclick="setStars(2)"></div>
-                <div class="star full" onclick="setStars(1)"></div>
+                <div class="star zero" onclick="setStars(4)"></div>
+                <div class="star zero" onclick="setStars(3)"></div>
+                <div class="star zero" onclick="setStars(2)"></div>
+                <div class="star zero" onclick="setStars(1)"></div>
               </div>
             </div>
             <div class="price">
-              <span>Precio: </span><strong>S/ 69.90</strong>
+              <span>Precio: </span><strong id="price">S./</strong>
             </div>
 
             <div class="size-selector">
               <p class="size-label">TALLA ROPA:</p>
               <p class="size-warning">*DEBES ELEGIR TU TALLA</p>
-              <div class="sizes">
+              <div id="sizes">
                 <button class="size-btn">XS</button>
                 <button class="size-btn">S</button>
                 <button class="size-btn">M</button>
@@ -205,87 +205,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      // Declaramos las variables necesarias
-      const addToCart = document.getElementById("add-to-cart");
-      const buttons = document.querySelectorAll(".size-btn");
-
-      // Reinicia a los valores iniciales
-
-      // Cuando carga la pagina web (DOM)
-      window.addEventListener("DOMContentLoaded", () => {
-        // Removemos todos los estados activos que hayamos colocado
-        // para la talla
-        buttons.forEach((btn) => btn.classList.remove("active"));
-        addToCart.disabled = true;
-      });
-
-      // añadimos un evento para al presionar una talla
-      // esta talla se seleccione
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          // quite la clase active de las demás
-          buttons.forEach((btn) => btn.classList.remove("active"));
-
-          // Añade al boton que hicieron click
-          button.classList.add("active");
-          addToCart.disabled = false;
-
-          // Cambia el texto del carrito
-          addToCart.textContent = "Agregar al carro";
-        });
-      });
-
-      // Creamos una función para cambiar la cantidad
-      function changeQuantity(amount) {
-        // Seleccionamos el objeto
-        const quantitySpan = document.getElementById("quantity");
-
-        // cambiamos según lo indicado en `amount`
-        let current = parseInt(quantitySpan.innerText);
-        current += amount;
-        // No puede ser menor a 1
-        if (current < 1) current = 1;
-        // Ni mayor a 50
-        if (current > 50) current = 50;
-        quantitySpan.innerText = current;
-      }
-
-      // Cambiamos la cantidad de estrellas `n`
-      function setStars(n) {
-        const container = document.getElementById("star-holder");
-        // Buscamos todas las estrellas dentro del star-holder
-        const stars = container.querySelectorAll("div");
-
-        // Removemos las clases
-        // ex. star full: estrella completa
-        // ex. star half: media estrella ...
-        stars.forEach((star) => {
-          star.classList.remove("full", "half", "zero");
-        });
-
-        // calculamos la cantidad de estrellas y el indice de la estrella que seleccionamos
-        const total = stars.length;
-        const startIndex = total - n;
-
-        // segun el indice es donde nos detenemos y entonces las demas estrellas estarían vacias
-        stars.forEach((star, index) => {
-          if (index >= startIndex) {
-            star.classList.add("full");
-          } else {
-            star.classList.add("zero");
-          }
-        });
-      }
-
-      function changeHeartState() {
-        const heart = document.getElementById("heart");
-        if (heart.classList.contains("active")) {
-          heart.classList.remove("active");
-        } else {
-          heart.classList.add("active");
-        }
-      }
-    </script>
+    <script src="js/item.js"></script>
   </body>
 </html>

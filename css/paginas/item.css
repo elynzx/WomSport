@@ -33,13 +33,13 @@ h2{
   gap: 2rem;
 }
 
-.image-preview{
+#image-preview{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.image-preview img{
+#image-preview img{
   width: 150px;
   cursor: pointer;
 }
@@ -178,7 +178,7 @@ serian las anteriores */
   font-size: 0.75rem;
 }
 
-.sizes {
+#sizes {
   margin-top: 0.5rem;
   display: flex;
 }
