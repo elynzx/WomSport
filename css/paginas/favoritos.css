@@ -1,8 +1,9 @@
-.header_fav {
+#header_fav {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100dvw;
+  justify-content: space-around;
 }
 /*<div class="section_fav">
         <div class="product_fav">
@@ -54,7 +55,7 @@
   border: 1px solid var(--color-nueve);
   color: var(--color-nueve);
   transition: all 0.2s ease-in-out;
-  border-radius: 18px;
+  border-radius:0.5rem;
   font-size: 0.8rem;
 }
 
