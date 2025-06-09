@@ -113,12 +113,20 @@ fetch("data/productos.json")
       image.src = item.miniaturas[index];
     });
 
-    document.getElementById('main-image').src = item.imagen
+    document.getElementById("main-image").src = item.imagen;
 
     console.log(item);
 
     setStars(Math.floor(item.calificacion * 2) / 2);
     document.getElementById("price").textContent = "S./ " + item.precio_actual;
+    
+    const priceBeforeElement = document.getElementById("price-before");
+    if (item.precio_anterior) {
+      priceBeforeElement.textContent = "Antes: S./ " + item.precio_anterior;
+    } else {
+      priceBeforeElement.style.display = "none"; 
+    }
+
     document.getElementById("product_title").textContent = item.nombre;
     document.getElementById("sku_id").textContent = "SKU: " + item.sku;
 
@@ -126,7 +134,7 @@ fetch("data/productos.json")
     const categories = document.getElementById("categories");
     categories.textContent = item.categoria ?? "faldas";
     if (item.categoria == "Faldas") {
-      categories.href = '/faldas.html'
+      categories.href = "/faldas.html";
     }
 
     add_listeners();
