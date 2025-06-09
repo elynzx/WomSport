@@ -1,0 +1,75 @@
+.header_fav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100dvw;
+}
+/*<div class="section_fav">
+        <div class="product_fav">
+            <img src="img/productos/faldas/fal02.jpg" alt="">
+            <div class="info_fav">
+                <div class="top_fav">
+                    <h1>Falda deportiva WomFit</h1>
+                    <button class="more_fav">...</button>
+                </div>
+                <div class="resume_fav">
+                    <p><strong>S/ 69    .90</strong> 20 vendidos  |  <img src="img/estrellas/star.svg" alt=""> 4.5</p>
+                    <p>Envío gratis a partir de S/ 200.00</p>
+                    <button class="add_fav">Agregar al Carro</button>
+
+                </div>*/
+.section_fav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+.top_fav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product_fav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.product_fav img {
+  width: 200px;
+}
+
+.resume_fav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add_fav {
+  border: 1px solid var(--color-nueve);
+  color: var(--color-nueve);
+  transition: all 0.2s ease-in-out;
+  border-radius: 18px;
+  font-size: 0.8rem;
+}
+
+.add_fav:hover {
+  font-weight: 800;
+  background-color: var(--color-cuatro);
+  color: #fff;
+
+  transform: translateY(-2.5px);
+  box-shadow: 1px 5px 10px var(--color-nueve);
+}
+
+button {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0px;
+  width: 10rem;
+}
