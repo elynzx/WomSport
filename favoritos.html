@@ -23,6 +23,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <title>WomSport</title>
   </head>
 
@@ -72,31 +76,57 @@
         <div><span id="cant_fav"></span></div>
         <div><p>EDITAR</p></div>
       </div>
-      <div class="section_fav">
-        <div class="product_fav">
-          <img src="img/productos/faldas/fal02.jpg" alt="" />
-          <div class="info_fav">
-            <div class="top_fav">
-              <h1>Falda deportiva WomFit</h1>
-              <button class="more_fav">...</button>
-            </div>
-            <div class="resume_fav">
-              <p>
-                <strong style="padding-right: 2rem">S/ 69.90 </strong> 20
-                vendidos |
-                <img
-                  style="height: 15px; width: 15px;"
-                  src="img/estrellas/star.svg"
-                  alt=""
-                  width="15px"
-                  height="15px"
-                />
-                4.5
-              </p>
-              <p>Envío gratis a partir de S/ 200.00</p>
-              <button class="add_fav">Agregar al Carro</button>
+
+      <div x-data="menuHandler()" class="relative">
+        <div class="section_fav">
+          <div class="product_fav">
+            <img src="img/productos/faldas/fal02.jpg" alt="" />
+            <div class="info_fav">
+              <div class="top_fav">
+                <h1>Falda deportiva WomFit</h1>
+                <!-- PASAMOS ID FIJO -->
+                <button @click="openMenu(42, $event)" class="more_fav">
+                  ...
+                </button>
+              </div>
+              <div class="resume_fav">
+                <p>
+                  <strong style="padding-right: 2rem">S/ 69.90 </strong> 20
+                  vendidos |
+                  <img
+                    style="height: 15px; width: 15px"
+                    src="img/estrellas/star.svg"
+                    alt=""
+                    width="15px"
+                    height="15px"
+                  />
+                  4.5
+                </p>
+                <p>Envío gratis a partir de S/ 200.00</p>
+                <button class="add_fav">Agregar al Carro</button>
+              </div>
             </div>
           </div>
+        </div>
+
+        <!-- Menu -->
+        <div
+          x-show="open"
+          x-transition
+          x-ref="menu"
+          @click.outside="open = false"
+          class="menu"
+          :style="{ top: `${menuY}px`, left: `${menuX}px` }"
+        >
+          <button @click="alert('View user ' + currentId); open = false">
+            View
+          </button>
+          <button @click="alert('Edit user ' + currentId); open = false">
+            Edit
+          </button>
+          <button @click="alert('Delete user ' + currentId); open = false">
+            Delete
+          </button>
         </div>
       </div>
     </main>
@@ -142,7 +172,5 @@
     </footer>
     <script src="js/favoritos.js"></script>
     <script src="js/inicio.js"></script>
-
-     
   </body>
 </html>
