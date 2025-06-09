@@ -1,5 +1,5 @@
 
-/* Productos por marca */
+/* Carga de productos por marca */
 
 document.addEventListener("DOMContentLoaded", function () {
     const brandLogos = document.querySelectorAll(".brands-content__logo a");

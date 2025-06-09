@@ -502,7 +502,7 @@
         "precio_anterior": 261.75,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/pantalones/pan01.jpg",
+        "imagen": "img/productos/pantalones/pan04.png",
         "miniaturas": [
             "img/productos/pantalones/pan01-a.jpg",
             "img/productos/pantalones/pan01-b.jpg",
@@ -658,7 +658,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": "NUEVO!",
         "descuento": null,
-        "imagen": "img/productos/pantalones/pan04.jpg",
+        "imagen": "img/productos/pantalones/pan05.png",
         "miniaturas": [
             "img/productos/pantalones/pan04-a.jpg",
             "img/productos/pantalones/pan04-b.jpg",
@@ -710,7 +710,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/pantalones/pan05.jpg",
+        "imagen": "img/productos/pantalones/pan06.png",
         "miniaturas": [
             "img/productos/pantalones/pan05-a.jpg",
             "img/productos/pantalones/pan05-b.jpg",
@@ -1033,7 +1033,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/conjuntos/set03.jpg",
+        "imagen": "img/productos/conjuntos/set10.png",
         "miniaturas": [
             "img/productos/conjuntos/set03-a.jpg",
             "img/productos/conjuntos/set03-b.jpg",
@@ -1060,7 +1060,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/conjuntos/set04.jpg",
+        "imagen": "img/productos/conjuntos/set11.png",
         "miniaturas": [
             "img/productos/conjuntos/set04-a.jpg",
             "img/productos/conjuntos/set04-b.jpg",
