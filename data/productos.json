@@ -88,7 +88,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/faldas/fal04.jpg",
+        "imagen": "img/productos/faldas/fal01.png",
         "miniaturas": [
             "img/productos/faldas/fal04-a.jpg",
             "img/productos/faldas/fal04-b.jpg",
@@ -142,7 +142,7 @@
         "precio_anterior": 238.07,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/faldas/fal06.jpg",
+        "imagen": "img/productos/faldas/fal06.png",
         "miniaturas": [
             "img/productos/faldas/fal06-a.jpg",
             "img/productos/faldas/fal06-b.jpg",
@@ -190,13 +190,13 @@
     },
     {
         "id": 8,
-        "nombre": "Falda GlideForm",
+        "nombre": "Vestido GlideForm",
         "descripcion": "Diseño moderno con estilo deportivo.",
         "precio_actual": 144.95,
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/faldas/fal08.jpg",
+        "imagen": "img/productos/faldas/ves03.png",
         "miniaturas": [
             "img/productos/faldas/fal08-a.jpg",
             "img/productos/faldas/fal08-b.jpg",
@@ -223,7 +223,7 @@
         "precio_anterior": 171.31,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/faldas/fal09.jpg",
+        "imagen": "img/productos/faldas/fal05.png",
         "miniaturas": [
             "img/productos/faldas/fal09-a.jpg",
             "img/productos/faldas/fal09-b.jpg",
@@ -306,7 +306,7 @@
         "precio_anterior": 218.72,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/topspolos/top02.jpg",
+        "imagen": "img/productos/topspolos/top03.png",
         "miniaturas": [
             "img/productos/topspolos/top02-a.jpg",
             "img/productos/topspolos/top02-b.jpg",
@@ -362,7 +362,7 @@
         "precio_anterior": 254.96,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/topspolos/top03.jpg",
+        "imagen": "img/productos/topspolos/top04.png",
         "miniaturas": [
             "img/productos/topspolos/top03-a.jpg",
             "img/productos/topspolos/top03-b.jpg",
@@ -384,13 +384,13 @@
     },
     {
         "id": 15,
-        "nombre": "Polo UltraRun",
+        "nombre": "Top UltraRun",
         "descripcion": "Ligereza y frescura para rutinas diarias.",
         "precio_actual": 144.39,
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/topspolos/pol03.jpg",
+        "imagen": "img/productos/topspolos/top07.png",
         "miniaturas": [
             "img/productos/topspolos/pol03-a.jpg",
             "img/productos/topspolos/pol03-b.jpg",
@@ -412,13 +412,13 @@
     },
     {
         "id": 16,
-        "nombre": "Top AeroCool",
+        "nombre": "Polo AeroCool",
         "descripcion": "Ajuste ergonómico para libertad de movimiento.",
         "precio_actual": 90.48,
         "precio_anterior": 120.64,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/topspolos/top04.jpg",
+        "imagen": "img/productos/topspolos/top05.png",
         "miniaturas": [
             "img/productos/topspolos/top04-a.jpg",
             "img/productos/topspolos/top04-b.jpg",
@@ -436,7 +436,7 @@
             "L",
             "XL"
         ],
-        "marca": "Nike"
+        "marca": "Adidas"
     },
     {
         "id": 17,
@@ -446,7 +446,7 @@
         "precio_anterior": 132.69,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/topspolos/pol04.jpg",
+        "imagen": "img/productos/topspolos/pol04.png",
         "miniaturas": [
             "img/productos/topspolos/pol04-a.jpg",
             "img/productos/topspolos/pol04-b.jpg",
@@ -474,7 +474,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/topspolos/top05.jpg",
+        "imagen": "img/productos/topspolos/pol03.png",
         "miniaturas": [
             "img/productos/topspolos/top05-a.jpg",
             "img/productos/topspolos/top05-b.jpg",
@@ -492,7 +492,7 @@
             "L",
             "XL"
         ],
-        "marca": "Adidas"
+        "marca": "Puma"
     },
     {
         "id": 19,
@@ -580,7 +580,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/pantalones/leg02.png",
+        "imagen": "img/productos/pantalones/leg03.png",
         "miniaturas": [
             "img/productos/pantalones/leg02-a.png",
             "img/productos/pantalones/leg02-b.png",
@@ -684,7 +684,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/pantalones/leg04.jpg",
+        "imagen": "img/productos/pantalones/leg01.png",
         "miniaturas": [
             "img/productos/pantalones/leg04-a.jpg",
             "img/productos/pantalones/leg04-b.jpg",
@@ -736,7 +736,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/casacas/cas01.jpg",
+        "imagen": "img/productos/casacas/cas01.png",
         "miniaturas": [
             "img/productos/casacas/cas01-a.jpg",
             "img/productos/casacas/cas01-b.jpg",
@@ -763,7 +763,7 @@
         "precio_anterior": 206.73,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/casacas/cas02.jpg",
+        "imagen": "img/productos/casacas/cas02.png",
         "miniaturas": [
             "img/productos/casacas/cas02-a.jpg",
             "img/productos/casacas/cas02-b.jpg",
@@ -790,7 +790,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": "NUEVO!",
         "descuento": null,
-        "imagen": "img/productos/casacas/cas03.jpg",
+        "imagen": "img/productos/casacas/cas03.png",
         "miniaturas": [
             "img/productos/casacas/cas03-a.jpg",
             "img/productos/casacas/cas03-b.jpg",
@@ -817,7 +817,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/casacas/cas04.jpg",
+        "imagen": "img/productos/casacas/cas04.png",
         "miniaturas": [
             "img/productos/casacas/cas04-a.jpg",
             "img/productos/casacas/cas04-b.jpg",
@@ -844,7 +844,7 @@
         "precio_anterior": 177.21,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/casacas/cas05.jpg",
+        "imagen": "img/productos/casacas/cas05.png",
         "miniaturas": [
             "img/productos/casacas/cas05-a.jpg",
             "img/productos/casacas/cas05-b.jpg",
@@ -871,7 +871,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/casacas/cas06.jpg",
+        "imagen": "img/productos/casacas/cas06.png",
         "miniaturas": [
             "img/productos/casacas/cas06-a.jpg",
             "img/productos/casacas/cas06-b.jpg",
@@ -925,7 +925,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/casacas/cas08.jpg",
+        "imagen": "img/productos/casacas/cas08.png",
         "miniaturas": [
             "img/productos/casacas/cas08-a.jpg",
             "img/productos/casacas/cas08-b.jpg",
@@ -952,7 +952,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/casacas/cas09.jpg",
+        "imagen": "img/productos/casacas/cas09.png",
         "miniaturas": [
             "img/productos/casacas/cas09-a.jpg",
             "img/productos/casacas/cas09-b.jpg",
@@ -1114,7 +1114,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": "NUEVO!",
         "descuento": null,
-        "imagen": "img/productos/conjuntos/set06.jpg",
+        "imagen": "img/productos/conjuntos/set06.png",
         "miniaturas": [
             "img/productos/conjuntos/set06-a.jpg",
             "img/productos/conjuntos/set06-b.jpg",
@@ -1141,7 +1141,7 @@
         "precio_anterior": 231.77,
         "etiqueta_publicidad": null,
         "descuento": "-25%",
-        "imagen": "img/productos/conjuntos/set07.jpg",
+        "imagen": "img/productos/conjuntos/set07.png",
         "miniaturas": [
             "img/productos/conjuntos/set07-a.jpg",
             "img/productos/conjuntos/set07-b.jpg",
@@ -1168,7 +1168,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/conjuntos/set08.jpg",
+        "imagen": "img/productos/conjuntos/set08.png",
         "miniaturas": [
             "img/productos/conjuntos/set08-a.jpg",
             "img/productos/conjuntos/set08-b.jpg",
@@ -1195,7 +1195,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": "NUEVO!",
         "descuento": null,
-        "imagen": "img/productos/conjuntos/set09.jpg",
+        "imagen": "img/productos/conjuntos/set09.png",
         "miniaturas": [
             "img/productos/conjuntos/set09-a.jpg",
             "img/productos/conjuntos/set09-b.jpg",
@@ -1212,6 +1212,6 @@
             "M",
             "L"
         ],
-        "marca": "Tory Sport"
+        "marca": "Adidas"
     }
 ]
