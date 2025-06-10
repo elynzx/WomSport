@@ -82,7 +82,7 @@ button {
   border-radius: 0.5rem;
   padding: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  width: 160px;
+  width: 250px;
   z-index: 100;
 }
 
@@ -94,6 +94,8 @@ button {
   padding: 0.5rem;
   text-align: left;
   cursor: pointer;
+
+  font-size: small;
 }
 
 .menu button:hover {
