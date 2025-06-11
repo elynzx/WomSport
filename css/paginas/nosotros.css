@@ -217,4 +217,22 @@ textarea {
     text-align: left;
     margin-left: 2rem;
   }
+
+  .team-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-info_content{
+    width: 100%;
+  }
+
+  .team-info_text{
+    width: 100%;
+  }
+
+  .photo{
+    width: 14rem;
+  }
+
 }
