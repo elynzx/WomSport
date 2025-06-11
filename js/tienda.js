@@ -4,18 +4,22 @@ document.addEventListener("DOMContentLoaded", function () {
   let productosActuales = [];
 
   fetch("data/productos.json")
-    .then(response => response.json())
-    .then(productos => {
+    .then((response) => response.json())
+    .then((productos) => {
       productosCompleto = productos;
 
       const brandSelected = urlParams.get("marca");
       const categorySelected = urlParams.get("categoria");
 
       productosActuales = brandSelected
-        ? productosCompleto.filter(producto => producto.marca === brandSelected)
+        ? productosCompleto.filter(
+            (producto) => producto.marca === brandSelected
+          )
         : categorySelected
-          ? productosCompleto.filter(producto => producto.categoria === categorySelected)
-          : productosCompleto;
+        ? productosCompleto.filter(
+            (producto) => producto.categoria === categorySelected
+          )
+        : productosCompleto;
 
       mostrarProductos(productosActuales);
     });
@@ -24,14 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const contenedor = document.querySelector(".store-products");
     contenedor.innerHTML = "";
 
-    lista.forEach(producto => {
-      const { id, nombre, descripcion, imagen, precio_actual, precio_anterior, etiqueta_publicidad, descuento } = producto;
+    lista.forEach((producto) => {
+      const {
+        id,
+        nombre,
+        descripcion,
+        imagen,
+        precio_actual,
+        precio_anterior,
+        etiqueta_publicidad,
+        descuento,
+      } = producto;
 
       let etiqueta = etiqueta_publicidad
         ? `<span class="product-card__label">${etiqueta_publicidad}</span>`
         : descuento
-          ? `<span class="product-card__dscto">${descuento}</span>`
-          : "";
+        ? `<span class="product-card__dscto">${descuento}</span>`
+        : "";
 
       let precioAntes = precio_anterior
         ? `<p class="product-card__price--old">S/${precio_anterior}</p>`
@@ -71,13 +84,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* Categorías */
   const categorias = document.querySelectorAll(".cat_button");
-  categorias.forEach(categoria => {
+  const contenedorProductos = document.querySelector(".store-products"); 
+
+  categorias.forEach((categoria) => {
     categoria.addEventListener("click", function (event) {
       event.preventDefault();
       const nombreCategoria = this.id;
-
-      productosActuales = productosCompleto.filter(producto => producto.categoria === nombreCategoria);
+      productosActuales = productosCompleto.filter(
+        (producto) => producto.categoria === nombreCategoria
+      );
       mostrarProductos(productosActuales);
+      contenedorProductos.scrollIntoView({ behavior: "smooth" });
     });
   });
 
@@ -98,12 +115,16 @@ document.addEventListener("DOMContentLoaded", function () {
       listaFiltrada = [...productosCompleto];
       productosActuales = listaFiltrada;
     } else {
-      listaFiltrada = listaFiltrada.filter(p => p.categoria === categoriaSeleccionada);
+      listaFiltrada = listaFiltrada.filter(
+        (p) => p.categoria === categoriaSeleccionada
+      );
     }
 
     const marcaSeleccionada = brandSelect.value;
     if (marcaSeleccionada !== "todas") {
-      listaFiltrada = listaFiltrada.filter(p => p.marca === marcaSeleccionada);
+      listaFiltrada = listaFiltrada.filter(
+        (p) => p.marca === marcaSeleccionada
+      );
     }
 
     const ordenSeleccionado = sortSelect.value;

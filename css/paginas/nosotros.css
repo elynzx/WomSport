@@ -51,13 +51,13 @@ main p {
   align-items: center;
   background: linear-gradient(white, var(--color-pinkLight));
   gap: 1.5rem;
-  padding: 6rem;
+  padding: 3rem;
 }
 
 .team-content {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 6rem;
 }
 
 .team-info {
@@ -65,6 +65,7 @@ main p {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+
 }
 
 .team-info li {
@@ -92,6 +93,8 @@ main p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+    width: 30dvw;
+
 }
 
 .team-info_text span{
