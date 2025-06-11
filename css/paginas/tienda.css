@@ -231,3 +231,7 @@ html {
     margin-bottom: 20px;
   }
 }
+
+#search-btn{
+  padding: 0.15rem;
+}
