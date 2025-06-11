@@ -24,7 +24,7 @@
             "M",
             "L"
         ],
-        "marca": "Reebok"
+        "marca": "Nike"
     },
     {
         "id": 2,
@@ -51,7 +51,7 @@
             "M",
             "L"
         ],
-        "marca": "Adidas"
+        "marca": "Nike"
     },
     {
         "id": 3,
@@ -78,7 +78,7 @@
             "M",
             "L"
         ],
-        "marca": "Reebok"
+        "marca": "Nike"
     },
     {
         "id": 4,
@@ -105,7 +105,7 @@
             "M",
             "L"
         ],
-        "marca": "Nike"
+        "marca": "Reebok"
     },
     {
         "id": 5,
@@ -132,7 +132,7 @@
             "M",
             "L"
         ],
-        "marca": "Lululemon"
+        "marca": "Nike"
     },
     {
         "id": 6,
@@ -159,7 +159,7 @@
             "M",
             "L"
         ],
-        "marca": "Tory Sport"
+        "marca": "Puma"
     },
     {
         "id": 7,
@@ -186,7 +186,7 @@
             "M",
             "L"
         ],
-        "marca": "Under Armour"
+        "marca": "Adidas"
     },
     {
         "id": 8,
@@ -213,7 +213,7 @@
             "M",
             "L"
         ],
-        "marca": "Puma"
+        "marca": "Tory Sport"
     },
     {
         "id": 9,
@@ -240,7 +240,7 @@
             "M",
             "L"
         ],
-        "marca": "Nike"
+        "marca": "Under Armour"
     },
     {
         "id": 10,
@@ -268,7 +268,7 @@
             "L",
             "XL"
         ],
-        "marca": "Puma"
+        "marca": "Adidas"
     },
     {
         "id": 11,
@@ -296,7 +296,7 @@
             "L",
             "XL"
         ],
-        "marca": "Puma"
+        "marca": "Under Armour"
     },
     {
         "id": 12,
@@ -324,7 +324,7 @@
             "L",
             "XL"
         ],
-        "marca": "Under Armour"
+        "marca": "Nike"
     },
     {
         "id": 13,
@@ -352,7 +352,7 @@
             "L",
             "XL"
         ],
-        "marca": "Nike"
+        "marca": "Lululemon"
     },
     {
         "id": 14,
@@ -518,7 +518,7 @@
             "M",
             "L"
         ],
-        "marca": "Tory Sport"
+        "marca": "Adidas"
     },
     {
         "id": 20,
@@ -544,7 +544,7 @@
             "M",
             "L"
         ],
-        "marca": "Nike"
+        "marca": "Adidas"
     },
     {
         "id": 21,
@@ -570,7 +570,7 @@
             "M",
             "L"
         ],
-        "marca": "Tory Sport"
+        "marca": "Nike"
     },
     {
         "id": 22,
@@ -596,7 +596,7 @@
             "M",
             "L"
         ],
-        "marca": "Tory Sport"
+        "marca": "Nike"
     },
     {
         "id": 23,
@@ -632,7 +632,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": "NUEVO!",
         "descuento": null,
-        "imagen": "img/productos/pantalones/leg03.png",
+        "imagen": "img/productos/pantalones/leg02.png",
         "miniaturas": [
             "img/productos/pantalones/leg03-a.png",
             "img/productos/pantalones/leg03-b.png",
@@ -648,7 +648,7 @@
             "M",
             "L"
         ],
-        "marca": "Puma"
+        "marca": "Under Armour"
     },
     {
         "id": 25,
@@ -684,7 +684,7 @@
         "precio_anterior": null,
         "etiqueta_publicidad": null,
         "descuento": null,
-        "imagen": "img/productos/pantalones/leg01.png",
+        "imagen": "img/productos/pantalones/leg05.png",
         "miniaturas": [
             "img/productos/pantalones/leg04-a.jpg",
             "img/productos/pantalones/leg04-b.jpg",
@@ -700,7 +700,7 @@
             "M",
             "L"
         ],
-        "marca": "Puma"
+        "marca": "Adidas"
     },
     {
         "id": 27,
@@ -726,7 +726,7 @@
             "M",
             "L"
         ],
-        "marca": "Puma"
+        "marca": "Nike"
     },
     {
         "id": 28,
@@ -753,7 +753,7 @@
             "L",
             "XL"
         ],
-        "marca": "Puma"
+        "marca": "Under Armour"
     },
     {
         "id": 29,
@@ -780,7 +780,7 @@
             "L",
             "XL"
         ],
-        "marca": "Adidas"
+        "marca": "Lululemon"
     },
     {
         "id": 30,
@@ -834,7 +834,7 @@
             "L",
             "XL"
         ],
-        "marca": "Nike"
+        "marca": "Adidas"
     },
     {
         "id": 32,
@@ -861,7 +861,7 @@
             "L",
             "XL"
         ],
-        "marca": "Tory Sport"
+        "marca": "Nike"
     },
     {
         "id": 33,
@@ -888,7 +888,7 @@
             "L",
             "XL"
         ],
-        "marca": "Puma"
+        "marca": "Adidas"
     },
     {
         "id": 34,
@@ -915,7 +915,7 @@
             "L",
             "XL"
         ],
-        "marca": "Nike"
+        "marca": "Tory Sport"
     },
     {
         "id": 35,
@@ -1104,7 +1104,7 @@
             "M",
             "L"
         ],
-        "marca": "Puma"
+        "marca": "Tory Sport"
     },
     {
         "id": 42,
@@ -1185,7 +1185,7 @@
             "M",
             "L"
         ],
-        "marca": "Adidas"
+        "marca": "Nike"
     },
     {
         "id": 45,
