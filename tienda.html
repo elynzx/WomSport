@@ -44,8 +44,9 @@
 
       <div class="header_right">
         <div class="search_bar">
-          <span> <i class="fa-solid fa-magnifying-glass"></i> </span>
-          <input type="text" placeholder="Buscar" />
+      
+          <input type="text"  id="search-input"  placeholder="Buscar" />
+            <span id="search-btn"> <i class="fa-solid fa-magnifying-glass" ></i> </span>
         </div>
         <div class="header_icons">
           <a href="favoritos.html" class="icon_nav">
@@ -95,10 +96,11 @@
 
       <section class="categories_type">
         <div class="categ_products">
-          <a href="faldas.html">
+          <a href="">
             <img src="img/categ/falCat.png" alt="Faldas" />
           </a>
-          <button class="cat_button" id="Faldas">Faldas y vestidos</button>
+          <button class="cat_button" id="Faldas">
+            Faldas y vestidos</button>
         </div>
 
         <div class="categ_products">
@@ -191,7 +193,7 @@
 
 
 
-    <div class="store">
+    <div class="store" id="tienda-productos">
       <section class="store-products"></section>
     </div>
 
@@ -235,6 +237,7 @@
   </footer>
 
   <script src="js/tienda.js"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>
