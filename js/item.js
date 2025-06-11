@@ -43,9 +43,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const favoritos = JSON.parse(window.localStorage.getItem('ws_favoritos') ?? '[]');
   set_favs_list(favoritos);
 
-  set_favs_list(favoritos)
-
-  check_fav_for(targetId)
   const heart = document.getElementById("heart");
   if (heart && check_fav_for(targetId)) {
     heart.classList.add("active");
