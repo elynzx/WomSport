@@ -23,9 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const categorySelected = urlParams.get("categoria");
 
       productosActuales = brandSelected
-        ? productosCompleto.filter((producto) => producto.marca === brandSelected)
+        ? productosCompleto.filter(
+            (producto) => producto.marca === brandSelected
+          )
         : categorySelected
-        ? productosCompleto.filter((producto) => producto.categoria === categorySelected)
+        ? productosCompleto.filter(
+            (producto) => producto.categoria === categorySelected
+          )
         : productosCompleto;
 
       mostrarProductos(productosActuales);
@@ -86,9 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const filtrados = productosCompleto.filter((producto) =>
-      producto.nombre.toLowerCase().includes(termino) ||
-      producto.descripcion.toLowerCase().includes(termino)
+    const filtrados = productosCompleto.filter(
+      (producto) =>
+        producto.nombre.toLowerCase().includes(termino) ||
+        producto.descripcion.toLowerCase().includes(termino)
     );
 
     mostrarProductos(filtrados);
@@ -134,11 +139,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const ordenSeleccionado = sortSelect.value;
 
     if (categoriaSeleccionada !== "todas") {
-      listaFiltrada = listaFiltrada.filter(p => p.categoria === categoriaSeleccionada);
+      listaFiltrada = listaFiltrada.filter(
+        (p) => p.categoria === categoriaSeleccionada
+      );
     }
 
     if (marcaSeleccionada !== "todas") {
-      listaFiltrada = listaFiltrada.filter(p => p.marca === marcaSeleccionada);
+      listaFiltrada = listaFiltrada.filter(
+        (p) => p.marca === marcaSeleccionada
+      );
     }
 
     if (ordenSeleccionado === "precio-asc") {
