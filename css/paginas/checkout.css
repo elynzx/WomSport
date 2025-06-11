@@ -22,14 +22,15 @@
 }
 
 /*CHECK LEFT*/
-main {
+.check {
   display: flex;
   width: 100%;
   height: 100dvh;
+  flex-direction: row;
 }
 .check_left {
   padding: 2.5rem;
-  width: 50%;
+  width: 65%;
   padding: 20px;
   box-sizing: border-box;
 }
