@@ -1,15 +1,56 @@
 // Declaramos las variables necesarias
 const addToCart = document.getElementById("add-to-cart");
 const buttons = document.querySelectorAll(".size-btn");
+const urlParams = new URLSearchParams(window.location.search);
+const targetId = urlParams.get("id");
+
+var favs_list = [];
+
+function set_favs_list(items) {
+  favs_list = Array.isArray(items) ? items : [items];
+  window.localStorage.setItem('ws_favoritos', JSON.stringify(favs_list));
+}
+
+function check_fav_for(id) {
+  return favs_list.includes(id);
+}
+
+function add_fav(id) {
+  if (!check_fav_for(id)) {
+    if (!Array.isArray(favs_list)) {
+      set_favs_list([favs_list]); // wrap it as array
+    }
+    favs_list.push(id);
+    set_favs_list(favs_list);
+  }
+}
+
+function remove_fav(id) {
+  if (check_fav_for(id)) {
+    favs_list = favs_list.filter(fav => fav !== id);
+    set_favs_list(favs_list);
+  }
+}
 
 // Reinicia a los valores iniciales
-
 // Cuando carga la pagina web (DOM)
 window.addEventListener("DOMContentLoaded", () => {
   // Removemos todos los estados activos que hayamos colocado
   // para la talla
   buttons.forEach((btn) => btn.classList.remove("active"));
   addToCart.disabled = true;
+
+  const favoritos = JSON.parse(window.localStorage.getItem('ws_favoritos') ?? '[]');
+  set_favs_list(favoritos);
+
+  set_favs_list(favoritos)
+
+  check_fav_for(targetId)
+  const heart = document.getElementById("heart");
+  if (heart && check_fav_for(targetId)) {
+    heart.classList.add("active");
+  }
+
 });
 
 // añadimos un evento para al presionar una talla
@@ -77,8 +118,10 @@ function setStars(n) {
 function changeHeartState() {
   const heart = document.getElementById("heart");
   if (heart.classList.contains("active")) {
+    remove_fav(targetId)
     heart.classList.remove("active");
   } else {
+    add_fav(targetId)
     heart.classList.add("active");
   }
 }
@@ -98,9 +141,6 @@ function renderSizes(item) {
   return container.outerHTML;
 }
 
-const urlParams = new URLSearchParams(window.location.search);
-const targetId = urlParams.get("id");
-
 fetch("data/productos.json")
   .then((response) => response.json())
   .then((data) => {
@@ -119,12 +159,12 @@ fetch("data/productos.json")
 
     setStars(Math.floor(item.calificacion * 2) / 2);
     document.getElementById("price").textContent = "S./ " + item.precio_actual;
-    
+
     const priceBeforeElement = document.getElementById("price-before");
     if (item.precio_anterior) {
       priceBeforeElement.textContent = "Antes: S./ " + item.precio_anterior;
     } else {
-      priceBeforeElement.style.display = "none"; 
+      priceBeforeElement.style.display = "none";
     }
 
     document.getElementById("product_title").textContent = item.nombre;
