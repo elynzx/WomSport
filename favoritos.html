@@ -79,36 +79,29 @@
       </div>
 
       <div x-data="menuHandler()" class="relative">
-        <div class="section_fav">
-          <div class="product_fav">
-            <img src="img/productos/faldas/fal02.jpg" alt="" />
-            <div class="info_fav">
-              <div class="top_fav">
-                <h1>Falda deportiva WomFit</h1>
-                <!-- PASAMOS ID FIJO -->
-                <button @click="openMenu(42, $event)" class="more_fav">
-                  ...
-                </button>
-              </div>
-              <div class="resume_fav">
-                <p>
-                  <strong style="padding-right: 2rem">S/ 69.90 </strong> 20
-                  vendidos |
-                  <img
-                    style="height: 15px; width: 15px"
-                    src="img/estrellas/star.svg"
-                    alt=""
-                    width="15px"
-                    height="15px"
-                  />
-                  4.5
-                </p>
-                <p>Envío gratis a partir de S/ 200.00</p>
-                <button class="add_fav">Agregar al Carro</button>
+        <template x-for="product in products" :key="product.id">
+          <div class="section_fav">
+            <div class="product_fav">
+              <img :src="product.image" alt="" />
+              <div class="info_fav">
+                <div class="top_fav">
+                  <h1 x-text="product.name"></h1>
+                  <button @click="openMenu(product.id, product.categoria, $event)" class="more_fav">...</button>
+                </div>
+                <div class="resume_fav">
+                  <p class="product-meta">
+                    <strong style="padding-right: 2rem" x-text="'S/ ' + product.price"></strong>
+                    <span x-text="product.sold + ' vendidos | '"></span>
+                    <img style="height: 15px; width: 15px" src="img/estrellas/star.svg" alt="" />
+                    <span x-text="product.rating"></span>
+                  </p>
+                  <p>Envío gratis a partir de S/ 200.00</p>
+                  <button class="add_fav">Agregar al Carro</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </template>
 
         <!-- Menu -->
         <div
@@ -119,13 +112,13 @@
           class="menu"
           :style="{ top: `${menuY}px`, left: `${menuX}px` }"
         >
-          <button @click="alert('View user ' + currentId); open = false">
+          <button @click="moveTo(currentCategoria); open = false">
             Artículos similares
           </button>
-          <button @click="alert('Edit user ' + currentId); open = false">
+          <!--<button @click="alert('Edit user ' + currentId); open = false">
             Mover a otra lista
-          </button>
-          <button @click="alert('Delete user ' + currentId); open = false">
+          </button>-->
+          <button @click="alterData(currentId); open = false">
             Eliminar de mi lista de deseos
           </button>
         </div>

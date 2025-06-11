@@ -5,28 +5,14 @@
   width: 100dvw;
   justify-content: space-around;
 }
-/*<div class="section_fav">
-        <div class="product_fav">
-            <img src="img/productos/faldas/fal02.jpg" alt="">
-            <div class="info_fav">
-                <div class="top_fav">
-                    <h1>Falda deportiva WomFit</h1>
-                    <button class="more_fav">...</button>
-                </div>
-                <div class="resume_fav">
-                    <p><strong>S/ 69    .90</strong> 20 vendidos  |  <img src="img/estrellas/star.svg" alt=""> 4.5</p>
-                    <p>Envío gratis a partir de S/ 200.00</p>
-                    <button class="add_fav">Agregar al Carro</button>
 
-                </div>*/
 .section_fav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5rem;
-  justify-items: center;
   justify-content: center;
+  padding: 2rem 5rem;
+  width: 100%;
 }
+
 
 .top_fav {
   display: flex;
@@ -39,10 +25,31 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
 }
 
 .product_fav img {
   width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.product-meta strong,
+.product-meta span,
+.product-meta img {
+  display: inline;
 }
 
 .resume_fav {
