@@ -18,3 +18,8 @@ function menuHandler() {
     },
   };
 }
+
+
+function goto_checkout() {
+    window.location.href = '/checkout.html'
+}
