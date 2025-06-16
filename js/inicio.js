@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 /* Carga de productos nuevos */
 
 fetch("data/productos.json")
