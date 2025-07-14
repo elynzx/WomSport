@@ -70,10 +70,27 @@ main {
   height: 50%;
 }
 
-.brands-content__logo img{
+.brands-content__logo img {
   height: 6rem;
 }
 
+
+/* Banner patrio */
+.banner-content-patrio {
+  padding: 6rem 8rem;
+}
+
+.banner-content-patrio h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  text-align: center;
+  color:rgb(150, 18, 18);
+}
+
+
+.banner-content-patrio img {
+  width: 100%;
+}
 
 /* MÁS VENDIDO */
 .best-seller {
@@ -308,6 +325,7 @@ main {
     width: 100%;
     background-color: var(--color-pinkLight);
   }
+
   .banner_info h2 {
     color: var(--color-brown);
     font-size: 32px;

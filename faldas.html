@@ -1,177 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
-    <!-- CSS -->
 
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/paginas/inicio.css" />
-    <link rel="stylesheet" href="css/componentes/producto.css" />
-      <link rel="stylesheet" href="css/componentes/header.css">
-    <link rel="stylesheet" href="css/componentes/footer.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <title>WomSport</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
+  <!-- CSS -->
 
-  <body>
-    <header>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/paginas/inicio.css" />
+  <link rel="stylesheet" href="css/componentes/producto.css" />
+  <link rel="stylesheet" href="css/componentes/header.css">
+  <link rel="stylesheet" href="css/componentes/footer.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>WomSport</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <p class="delivery">¡Envío gratuito en pedidos superiores a S/200!</p>
+    </center>
+    <div class="header_content">
+      <nav class="header_nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header_logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo de WomSport" /></a>
+      </div>
+
+      <div class="header_right">
+        <div class="search_bar">
+
+          <input type="text" id="search-input" placeholder="Buscar" />
+          <span id="search-btn"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+        </div>
+        <div class="header_icons">
+          <a href="favoritos.html" class="icon_nav">
+            <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="carrito.html" class="icon_nav">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="sesion.html" class="icon_nav">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <span class="nav-route">
+      <a href="tienda.html">Tienda</a>
+      <p>/</p>
+      <a href="faldas.html">Faldas</a>
+    </span>
+
+    <!-- Faldas -->
+
+    <div class="new_in">
       <center>
-        <p class="delivery">¡Envío gratuito en pedidos superiores a S/200!</p>
+        <h2>¡ LO NUEVO DE LA TEMPORADA !</h2>
       </center>
-      <div class="header_content">
-        <nav class="header_nav">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="ofertas.html">Ofertas</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-          </ul>
-        </nav>
 
-        <div class="header_logo">
-          <a href="index.html"
-            ><img src="img/logo.png" alt="Logo de WomSport"
-          /></a>
+      <section class="new_product">
+        <div class="product_card">
+          <div class="product_image">
+            <a href="item.html">
+              <img src="img/prod/Frame 23.png" alt="" />
+              <span class="dscto">NUEVO!</span>
+            </a>
+          </div>
+          <div class="product_description">
+            <strong class="tittle"><a href="item.html">Falda deportiva "WomFit"</a></strong>
+            <p class="description">Cintura alta, falda de tenis</p>
+            <div class="details">
+              <div class="prices">
+                <p class="price_after">S/103.00</p>
+                <p class="price_before"></p>
+              </div>
+              <span class="btn-agregar"><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
         </div>
 
-        <div class="header_right">
-          <div class="search_bar">
-         
-          <input type="text"  id="search-input"  placeholder="Buscar" />
-            <span id="search-btn"> <i class="fa-solid fa-magnifying-glass" ></i> </span>
+        <div class="product_card">
+          <div class="product_image">
+            <a href="item2.html">
+              <img src="img/prod/Frame 22.png" alt="" />
+              <span class="dscto">-15%</span>
+            </a>
           </div>
-          <div class="header_icons">
-            <a href="favoritos.html" class="icon_nav">
-              <i class="fa-regular fa-heart"></i>
-            </a>
-            <a href="carrito.html" class="icon_nav">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="sesion.html" class="icon_nav">
-              <i class="fa-regular fa-user"></i>
-            </a>
+          <div class="product_description">
+            <strong class="tittle"><a href="item2.html">Falda deportiva “SunMove”</a></strong>
+            <p class="description">Falda de tenis Flouncy para mujer</p>
+            <div class="details">
+              <div class="prices">
+                <p class="price_after">135.00</p>
+                <p class="price_before">S/155.00</p>
+              </div>
+              <span class="btn-agregar"><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
 
-    <main>
-      <span class="nav-route">
-        <a href="tienda.html">Tienda</a>
-        <p>/</p>
-        <a href="faldas.html">Faldas</a>
-      </span>
+        <div class="product_card">
+          <div class="product_image">
+            <a href="item.html">
+              <img src="img/prod/Group 1660.png" alt="" />
 
-      <!-- Faldas -->
-
-      <div class="new_in">
-        <center>
-          <h2>¡ LO NUEVO DE LA TEMPORADA !</h2>
-        </center>
-
-        <section class="new_product">
-          <div class="product_card">
-            <div class="product_image">
-              <a href="item.html">
-                <img src="img/prod/Frame 23.png" alt="" />
-                <span class="dscto">NUEVO!</span>
-              </a>
-            </div>
-            <div class="product_description">
-              <strong class="tittle"
-                ><a href="item.html">Falda deportiva "WomFit"</a></strong
-              >
-              <p class="description">Cintura alta, falda de tenis</p>
-              <div class="details">
-                <div class="prices">
-                  <p class="price_after">S/103.00</p>
-                  <p class="price_before"></p>
-                </div>
-                <span class="btn-agregar"
-                  ><i class="fa-solid fa-cart-plus"></i
-                ></span>
+            </a>
+          </div>
+          <div class="product_description">
+            <strong class="tittle"><a href="item.html">Falda deportiva “SweetRunner”</a></strong>
+            <p class="description">Falda de tenis Flouncy para mujer</p>
+            <div class="details">
+              <div class="prices">
+                <p class="price_after">S/111.00</p>
+                <p class="price_before"></p>
               </div>
+              <span class="btn-agregar"><i class="fa-solid fa-cart-plus"></i></span>
             </div>
           </div>
-
-          <div class="product_card">
-            <div class="product_image">
-              <a href="item2.html">
-                <img src="img/prod/Frame 22.png" alt="" />
-                <span class="dscto">-15%</span>
-              </a>
-            </div>
-            <div class="product_description">
-              <strong class="tittle"
-                ><a href="item2.html">Falda deportiva “SunMove”</a></strong
-              >
-              <p class="description">Falda de tenis Flouncy para mujer</p>
-              <div class="details">
-                <div class="prices">
-                  <p class="price_after">135.00</p>
-                  <p class="price_before">S/155.00</p>
-                </div>
-                <span class="btn-agregar"
-                  ><i class="fa-solid fa-cart-plus"></i
-                ></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product_card">
-            <div class="product_image">
-              <a href="item.html">
-                <img src="img/prod/Group 1660.png" alt="" />
-               
-              </a>
-            </div>
-            <div class="product_description">
-              <strong class="tittle"
-                ><a href="item.html">Falda deportiva “SweetRunner”</a></strong
-              >
-              <p class="description">Falda de tenis Flouncy para mujer</p>
-              <div class="details">
-                <div class="prices">
-                  <p class="price_after">S/111.00</p>
-                  <p class="price_before"></p>
-                </div>
-                <span class="btn-agregar"
-                  ><i class="fa-solid fa-cart-plus"></i
-                ></span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <section class="suscription">
-        <h2>Suscríbete para más novedades</h2>
-        <p>
-          Recibe ofertas exclusivas y las últimas novedades directamente en tu
-          correo.
-        </p>
-        <form class="form_suscription">
-          <div class="form_mail">
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Ingresa tu correo" />
-          </div>
-          <button type="submit">Suscribirme</button>
-        </form>
+        </div>
       </section>
-    </main>
-    <footer>
+    </div>
+
+    <section class="suscription">
+      <h2>Suscríbete para más novedades</h2>
+      <p>
+        Recibe ofertas exclusivas y las últimas novedades directamente en tu
+        correo.
+      </p>
+      <form class="form_suscription">
+        <div class="form_mail">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Ingresa tu correo" />
+        </div>
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer_top">
+
       <div class="footer_left">
         <img src="img/logo.png" alt="" />
         <div class="footer_links">
@@ -197,20 +184,24 @@
         <div class="footer_social">
           <h4>Síguenos</h4>
           <div class="social_icons">
-            <a href="#" class="icon_nav"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+            <a href="#" class="icon_nav"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="icon_nav"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="icon_nav"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
+            <a href="#" class="icon_nav"><i class="fa-brands fa-facebook"></i></a>
           </div>
         </div>
         <div class="footer_libro">
-          <img src="img/libro-reclamaciones.png" alt="" />
+          <img src="img/libro-reclamaciones2.png" alt="" />
         </div>
       </div>
-    </footer>
-     <script src="js/header.js"></script>
-  </body>
+
+    </div>
+    <div class="footer_bottom">
+      <img src="img/pay/medios-pago.webp" alt="" />
+      <p>&copy; 2025 WomSport | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+</body>
+
 </html>

@@ -1,179 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/paginas/nosotros.css" />
-    <link rel="stylesheet" href="css/componentes/header.css" />
-    <link rel="stylesheet" href="css/componentes/footer.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <title>WomSport</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/paginas/nosotros.css" />
+  <link rel="stylesheet" href="css/componentes/header.css" />
+  <link rel="stylesheet" href="css/componentes/footer.css" />
 
-  <body>
-    <header>
-      <center>
-        <p class="delivery">¡Envío gratuito en pedidos superiores a S/200!</p>
-      </center>
-      <div class="header_content">
-        <nav class="header_nav">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>WomSport</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <p class="delivery">¡Envío gratuito en pedidos superiores a S/200!</p>
+    </center>
+    <div class="header_content">
+      <nav class="header_nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header_logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo de WomSport" /></a>
+      </div>
+
+      <div class="header_right">
+        <div class="search_bar">
+          <input type="text" id="search-input" placeholder="Buscar" />
+          <span id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
+        <div class="header_icons">
+          <a href="favoritos.html" class="icon_nav"><i class="fa-regular fa-heart"></i></a>
+          <a href="carrito.html" class="icon_nav"><i class="fas fa-shopping-cart"></i></a>
+          <a href="sesion.html" class="icon_nav"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="about-us">
+      <section class="about">
+        <div class="content_text">
+          <h2>¿Quiénes somos?</h2>
+          <p>
+            WomSport es una marca peruana enfocada en crear ropa deportiva
+            diseñada exclusivamente para mujeres. Creemos en la importancia
+            del movimiento, la autoexpresión y el bienestar físico y mental.
+          </p>
+        </div>
+        <iframe src="https://www.youtube.com/embed/CTkrrpF84Rw?si=6R0s6f7ZbII0Tezq" frameborder="0" width="540"
+          height="300">
+          ></iframe>
+      </section>
+
+      <section class="mision">
+        <img src="img/about/mision.jpg" alt="Misión WomSport" />
+        <div class="content_text">
+          <h2>Nuestra Misión</h2>
+          <p>
+            Empoderar a las mujeres a través de indumentaria deportiva de
+            calidad que potencie su rendimiento, confianza y estilo en cada
+            entrenamiento y en su vida diaria.
+          </p>
+        </div>
+      </section>
+
+      <section class="vision">
+        <div class="content_text">
+          <h2>Visión</h2>
+          <p>
+            Ser reconocida como una marca líder en ropa deportiva femenina en
+            Latinoamérica, destacando por nuestro compromiso con la
+            innovación, la inclusión y el impacto positivo en la comunidad.
+          </p>
+        </div>
+        <img src="img/about/vision.jpg" alt="Visión WomSport" />
+      </section>
+
+      <section class="values">
+        <img src="img/about/gestion.jpg" alt="Valores WomSport" />
+        <div class="content_text">
+          <h2>Objetivos de la empresa</h2>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="ofertas.html">Ofertas</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li>✔ Compromiso con la calidad</li>
+            <li>✔ Innovación en diseño</li>
+            <li>✔ Construcción de nuestra comunidad</li>
+            <li>✔ Empoderamiento femenino</li>
           </ul>
-        </nav>
+        </div>
+      </section>
+    </div>
 
-        <div class="header_logo">
-          <a href="index.html"
-            ><img src="img/logo.png" alt="Logo de WomSport"
-          /></a>
+<section class="mapa-content">
+  <h2>Mapa Organizacional</h2>
+  <img src="img/about/organigrama.png" alt="">
+</section>
+
+
+    <section class="team">
+      <h2>Equipo de trabajo</h2>
+      <div class="team-content">
+        <div class="team-info">
+          <img class="photo" src="img/teamInfo/evelynPhoto.png" alt="Foto de Evelyn Roxana Pascual Caycho"
+            width="180" />
+          <h3>Evelyn Roxana Pascual Caycho</h3>
+
+          <div class="team-info_content">
+            <div class="team-info_text">
+              <h4>Habilidades blandas</h4>
+              <ul>
+                <li>Responsabilidad y compromiso con los proyectos</li>
+                <li>Trabajo autónomo y en equipo de manera eficiente</li>
+                <li>
+                  Pensamiento analítico y enfoque en la solución de problemas
+                </li>
+                <li>Buena organización y gestión del tiempo</li>
+                <li>Comunicación clara y empática</li>
+                <li>
+                  Orientación a proyectos con impacto social y sostenibilidad
+                </li>
+              </ul>
+            </div>
+
+            <div class="team-info_text tech-content">
+              <h4>Habilidades técnicas</h4>
+              <ul>
+                <li>
+                  Desarrollo de aplicaciones de escritorio y web (HTML, CSS,
+                  Bootstrap).
+                </li>
+                <li>
+                  Manejo de lógica, estructuras de control y base de datos con
+                  JDBC, MySQL y MariaDB.
+                </li>
+                <li>Programación orientada a objetos en Java</li>
+                <li>
+                  Prototipado y diseño visual con Figma, Adobe Photoshop e
+                  Illustrator.
+                </li>
+                <li>
+                  Uso de frameworks y tecnologías como Angular y Bootstrap 5
+                </li>
+              </ul>
+            </div>
+
+            <div class="team-info_text">
+              <h4>Tecnologías que utilizo</h4>
+              <div class="team-info_tech">
+                <span>Lenguajes</span>
+                <div class="tech_logos">
+                  <img src="img/teamInfo/techLogo/java.png" alt="Java" />
+                  <img src="img/teamInfo/techLogo/js.png" alt="JavaScript" />
+                </div>
+
+                <span>Desarrollo web</span>
+                <div class="tech_logos">
+                  <img src="img/teamInfo/techLogo/html5.png" alt="HTML5" />
+                  <img src="img/teamInfo/techLogo/css3.png" alt="CSS3" />
+                  <img src="img/teamInfo/techLogo/mysql.png" alt="MySQL" />
+                </div>
+                <span>Diseño</span>
+                <div class="tech_logos">
+                  <img src="img/teamInfo/techLogo/ai.png" alt="Illustrator" />
+                  <img src="img/teamInfo/techLogo/figma.png" alt="Figma" />
+                  <img src="img/teamInfo/techLogo/ps.png" alt="Photoshop" />
+                </div>
+                <span>Frameworks</span>
+                <div class="tech_logos">
+                  <img src="img/teamInfo/techLogo/bootstrap5.png" alt="Bootstrap 5" />
+                  <img src="img/teamInfo/techLogo/angular17.png" alt="Angular" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="header_right">
-          <div class="search_bar">
-            <input type="text" id="search-input" placeholder="Buscar" />
-            <span id="search-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-          </div>
-          <div class="header_icons">
-            <a href="favoritos.html" class="icon_nav"
-              ><i class="fa-regular fa-heart"></i
-            ></a>
-            <a href="carrito.html" class="icon_nav"
-              ><i class="fas fa-shopping-cart"></i
-            ></a>
-            <a href="sesion.html" class="icon_nav"
-              ><i class="fa-regular fa-user"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="about-us">
-        <section class="about">
-          <div class="content_text">
-            <h2>¿Quiénes somos?</h2>
-            <p>
-              WomSport es una marca peruana enfocada en crear ropa deportiva
-              diseñada exclusivamente para mujeres. Creemos en la importancia
-              del movimiento, la autoexpresión y el bienestar físico y mental.
-            </p>
-          </div>
-          <iframe
-            src="https://www.youtube.com/embed/CTkrrpF84Rw?si=6R0s6f7ZbII0Tezq"
-            frameborder="0"
-            width="600"
-            height="300"
-          >
-            ></iframe
-          >
-        </section>
-
-        <section class="mision">
-          <img src="img/about/mision.jpg" alt="Misión WomSport" />
-          <div class="content_text">
-            <h2>Nuestra Misión</h2>
-            <p>
-              Empoderar a las mujeres a través de indumentaria deportiva de
-              calidad que potencie su rendimiento, confianza y estilo en cada
-              entrenamiento y en su vida diaria.
-            </p>
-          </div>
-        </section>
-
-        <section class="vision">
-          <div class="content_text">
-            <h2>Visión</h2>
-            <p>
-              Ser reconocida como una marca líder en ropa deportiva femenina en
-              Latinoamérica, destacando por nuestro compromiso con la
-              innovación, la inclusión y el impacto positivo en la comunidad.
-            </p>
-          </div>
-          <img src="img/about/vision.jpg" alt="Visión WomSport" />
-        </section>
-
-        <section class="values">
-          <img src="img/about/gestion.jpg" alt="Valores WomSport" />
-          <div class="content_text">
-            <h2>Objetivos de la empresa</h2>
-            <ul>
-              <li>✔ Compromiso con la calidad</li>
-              <li>✔ Innovación en diseño</li>
-              <li>✔ Construcción de nuestra comunidad</li>
-              <li>✔ Empoderamiento femenino</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-
-      <section class="team">
-        <h2>Equipo de trabajo</h2>
         <div class="team-content">
           <div class="team-info">
-            <img
-              class="photo"
-              src="img/teamInfo/evelynPhoto.png"
-              alt="Foto de Evelyn Roxana Pascual Caycho"
-              width="180"
-            />
-            <h3>Evelyn Roxana Pascual Caycho</h3>
+            <img class="photo" src="img/teamInfo/Paolaphoto.jpg" alt="Foto de Paola Maria Fernanda Artola Ruiz"
+              width="180" />
+            <h3>Paola Maria Fernanda Artola Ruiz</h3>
 
             <div class="team-info_content">
               <div class="team-info_text">
                 <h4>Habilidades blandas</h4>
                 <ul>
-                  <li>Responsabilidad y compromiso con los proyectos</li>
-                  <li>Trabajo autónomo y en equipo de manera eficiente</li>
+                  <li>Adaptabilidad ante cambios y nuevos desafíos</li>
                   <li>
-                    Pensamiento analítico y enfoque en la solución de problemas
+                    Colaboración efectiva en entornos multidisciplinarios
                   </li>
-                  <li>Buena organización y gestión del tiempo</li>
-                  <li>Comunicación clara y empática</li>
+                  <li>Pensamiento crítico y toma de decisiones informadas</li>
                   <li>
-                    Orientación a proyectos con impacto social y sostenibilidad
+                    Gestión eficiente del tiempo y priorización de tareas
+                  </li>
+                  <li>Escucha activa y habilidades interpersonales</li>
+                  <li>
+                    Proactividad y compromiso con el aprendizaje continuo
                   </li>
                 </ul>
               </div>
 
-              <div class="team-info_text">
+              <div class="team-info_text tech-content">
                 <h4>Habilidades técnicas</h4>
                 <ul>
                   <li>
-                    Desarrollo de aplicaciones de escritorio y web (HTML, CSS,
-                    Bootstrap).
+                    Desarrollo web con HTML, CSS, JavaScript y TypeScript
                   </li>
                   <li>
-                    Manejo de lógica, estructuras de control y base de datos con
-                    JDBC, MySQL y MariaDB.
+                    Gestión de bases de datos relacionales y no relacionales
+                    (MySQL)
                   </li>
-                  <li>Programación orientada a objetos en Java</li>
-                  <li>
-                    Prototipado y diseño visual con Figma, Adobe Photoshop e
-                    Illustrator.
-                  </li>
-                  <li>
-                    Uso de frameworks y tecnologías como Angular y Bootstrap 5
-                  </li>
+                  <li>Diseño UI/UX y wireframes con Figma</li>
+                  <li>Uso de frameworks modernos como Angular y Bootstrap</li>
+                  <li>Control de versiones con Git y GitHub</li>
                 </ul>
               </div>
 
@@ -194,139 +253,27 @@
                   </div>
                   <span>Diseño</span>
                   <div class="tech_logos">
-                    <img src="img/teamInfo/techLogo/ai.png" alt="Illustrator" />
                     <img src="img/teamInfo/techLogo/figma.png" alt="Figma" />
                     <img src="img/teamInfo/techLogo/ps.png" alt="Photoshop" />
                   </div>
                   <span>Frameworks</span>
                   <div class="tech_logos">
-                    <img
-                      src="img/teamInfo/techLogo/bootstrap5.png"
-                      alt="Bootstrap 5"
-                    />
-                    <img
-                      src="img/teamInfo/techLogo/angular17.png"
-                      alt="Angular"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="team-content">
-            <div class="team-info">
-              <img
-                class="photo"
-                src="img/teamInfo/Paolaphoto.jpg"
-                alt="Foto de Paola Maria Fernanda Artola Ruiz"
-                width="180"
-              />
-              <h3>Paola Maria Fernanda Artola Ruiz</h3>
-
-              <div class="team-info_content">
-                <div class="team-info_text">
-                  <h4>Habilidades blandas</h4>
-                  <ul>
-                    <li>Adaptabilidad ante cambios y nuevos desafíos</li>
-                    <li>
-                      Colaboración efectiva en entornos multidisciplinarios
-                    </li>
-                    <li>Pensamiento crítico y toma de decisiones informadas</li>
-                    <li>
-                      Gestión eficiente del tiempo y priorización de tareas
-                    </li>
-                    <li>Escucha activa y habilidades interpersonales</li>
-                    <li>
-                      Proactividad y compromiso con el aprendizaje continuo
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="team-info_text">
-                  <h4>Habilidades técnicas</h4>
-                  <ul>
-                    <li>
-                      Desarrollo web con HTML, CSS, JavaScript y TypeScript
-                    </li>
-                    <li>
-                      Gestión de bases de datos relacionales y no relacionales
-                      (MySQL)
-                    </li>
-                    <li>Diseño UI/UX y wireframes con Figma</li>
-                    <li>Uso de frameworks modernos como Angular y Bootstrap</li>
-                    <li>Control de versiones con Git y GitHub</li>
-                  </ul>
-                </div>
-
-                <div class="team-info_text">
-                  <h4>Tecnologías que utilizo</h4>
-                  <div class="team-info_tech">
-                    <span>Lenguajes</span>
-                    <div class="tech_logos">
-                      <img src="img/teamInfo/techLogo/java.png" alt="Java" />
-                      <img
-                        src="img/teamInfo/techLogo/js.png"
-                        alt="JavaScript"
-                      />
-                    </div>
-
-                    <span>Desarrollo web</span>
-                    <div class="tech_logos">
-                      <img src="img/teamInfo/techLogo/html5.png" alt="HTML5" />
-                      <img src="img/teamInfo/techLogo/css3.png" alt="CSS3" />
-                      <img src="img/teamInfo/techLogo/mysql.png" alt="MySQL" />
-                    </div>
-                    <span>Diseño</span>
-                    <div class="tech_logos">
-                      <img src="img/teamInfo/techLogo/figma.png" alt="Figma" />
-                      <img src="img/teamInfo/techLogo/ps.png" alt="Photoshop" />
-                    </div>
-                    <span>Frameworks</span>
-                    <div class="tech_logos">
-                      <img
-                        src="img/teamInfo/techLogo/bootstrap5.png"
-                        alt="Bootstrap 5"
-                      />
-                      <img
-                        src="img/teamInfo/techLogo/angular17.png"
-                        alt="Angular"
-                      />
-                    </div>
+                    <img src="img/teamInfo/techLogo/bootstrap5.png" alt="Bootstrap 5" />
+                    <img src="img/teamInfo/techLogo/angular17.png" alt="Angular" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contact">
-        <h2>Contáctanos</h2>
-        <p>Envíanos un correo y responderemos a la brevedad.</p>
-        <form>
-          <div class="contact_name">
-            <i class="fa fa-user icon"></i>
-            <input type="text" placeholder="Ingresa tu nombre completo" />
-          </div>
-          <div class="contact_mail">
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Ingresa tu correo" />
-          </div>
-          <div class="contact_mail">
-            <textarea
-              name="message"
-              rows="10"
-              cols="30"
-              placeholder="Escribe tu mensaje"
-            ></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
+  </main>
 
-    <footer>
+  <footer>
+    <div class="footer_top">
+
       <div class="footer_left">
         <img src="img/logo.png" alt="" />
         <div class="footer_links">
@@ -352,21 +299,24 @@
         <div class="footer_social">
           <h4>Síguenos</h4>
           <div class="social_icons">
-            <a href="#" class="icon_nav"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+            <a href="#" class="icon_nav"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="icon_nav"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="icon_nav"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
+            <a href="#" class="icon_nav"><i class="fa-brands fa-facebook"></i></a>
           </div>
         </div>
         <div class="footer_libro">
-          <img src="img/libro-reclamaciones.png" alt="" />
+          <img src="img/libro-reclamaciones2.png" alt="" />
         </div>
       </div>
-    </footer>
 
-    <script src="js/header.js"></script>
-  </body>
+    </div>
+    <div class="footer_bottom">
+      <img src="img/pay/medios-pago.webp" alt="" />
+      <p>&copy; 2025 WomSport | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+</body>
+
 </html>

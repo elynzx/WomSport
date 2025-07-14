@@ -1,18 +1,11 @@
-/* document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("search-input");
-    const searchIcon = document.getElementById("search-btn");
+window.addEventListener("DOMContentLoaded", () => {
+  const usuario = JSON.parse(localStorage.getItem("usuarioActivo"));
+  if (usuario) {
+    const headerIcons = document.querySelector(".header_icons");
 
-    searchIcon.addEventListener("click", buscarProductos); 
-    searchInput.addEventListener("keyup", function (event) {
-        if (event.key === "Enter") {
-            buscarProductos();
-        }
-    });
-
-    function buscarProductos() {
-        const terminoBusqueda = searchInput.value.toLowerCase().trim();
-        if (terminoBusqueda === "") return; 
-
-        window.location.href = `tienda.html?busqueda=${encodeURIComponent(terminoBusqueda)}`;
-    }
-}); */
+    const saludo = document.createElement("span");
+    saludo.classList.add("user-welcome");
+    saludo.textContent = `Hola, ${usuario.nombres}`;
+    headerIcons.appendChild(saludo);
+  }
+});

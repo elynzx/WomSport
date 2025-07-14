@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("search-input");
   const searchButton = document.getElementById("search-btn");
   const clearFiltersBtn = document.getElementById("clear-filters");
-  const sortSelect = document.getElementById("sort");
-  const categorySelect = document.getElementById("category");
-  const brandSelect = document.getElementById("brand");
+  const seleccionOrden = document.getElementById("sort");
+  const seleccionCategoria = document.getElementById("category");
+  const seleccionMarca = document.getElementById("brand");
   const categorias = document.querySelectorAll(".cat_button");
   const contenedorProductos = document.querySelector(".store-products");
 
@@ -19,18 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((productos) => {
       productosCompleto = productos;
 
-      const brandSelected = urlParams.get("marca");
-      const categorySelected = urlParams.get("categoria");
+      const marcaSeleccionada = urlParams.get("marca");
+      const categoriaSeleccionada = urlParams.get("categoria");
 
-      productosActuales = brandSelected
+      productosActuales = marcaSeleccionada
         ? productosCompleto.filter(
-            (producto) => producto.marca === brandSelected
+          (producto) => producto.marca === marcaSeleccionada
+        )
+        : categoriaSeleccionada
+          ? productosCompleto.filter(
+            (producto) => producto.categoria === categoriaSeleccionada
           )
-        : categorySelected
-        ? productosCompleto.filter(
-            (producto) => producto.categoria === categorySelected
-          )
-        : productosCompleto;
+          : productosCompleto;
 
       mostrarProductos(productosActuales);
     });
@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const etiqueta = etiqueta_publicidad
         ? `<span class="product-card__label">${etiqueta_publicidad}</span>`
         : descuento
-        ? `<span class="product-card__dscto">${descuento}</span>`
-        : "";
+          ? `<span class="product-card__dscto">${descuento}</span>`
+          : "";
 
       const precioAntes = precio_anterior
         ? `<p class="product-card__price--old">S/${precio_anterior}</p>`
@@ -80,6 +80,16 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
     });
+
+    const secciontienda = window.location.secciontienda;
+    if (secciontienda === "#tienda-productos") {
+      const destino = document.querySelector(secciontienda);
+      if (destino) {
+        setTimeout(() => {
+          destino.scrollIntoView({ behavior: "smooth" });
+        }, 50);
+      }
+    }
   }
 
   // Buscador
@@ -107,9 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Limpiar filtros
   clearFiltersBtn.addEventListener("click", function () {
-    categorySelect.value = "todas";
-    brandSelect.value = "todas";
-    sortSelect.value = "relevancia";
+    seleccionCategoria.value = "todas";
+    seleccionMarca.value = "todas";
+    seleccionOrden.value = "relevancia";
 
     productosActuales = [...productosCompleto];
     mostrarProductos(productosActuales);
@@ -134,9 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function aplicarFiltros() {
     let listaFiltrada = [...productosActuales];
 
-    const categoriaSeleccionada = categorySelect.value;
-    const marcaSeleccionada = brandSelect.value;
-    const ordenSeleccionado = sortSelect.value;
+    const categoriaSeleccionada = seleccionCategoria.value;
+    const marcaSeleccionada = seleccionMarca.value;
+    const ordenSeleccionado = seleccionOrden.value;
 
     if (categoriaSeleccionada !== "todas") {
       listaFiltrada = listaFiltrada.filter(
@@ -167,7 +177,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos(listaFiltrada);
   }
 
-  sortSelect.addEventListener("change", aplicarFiltros);
-  categorySelect.addEventListener("change", aplicarFiltros);
-  brandSelect.addEventListener("change", aplicarFiltros);
+  seleccionOrden.addEventListener("change", aplicarFiltros);
+  seleccionCategoria.addEventListener("change", aplicarFiltros);
+  seleccionMarca.addEventListener("change", aplicarFiltros);
 });
+

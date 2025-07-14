@@ -36,6 +36,7 @@ main p {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   max-height: 60dvh;
+  max-width: 38dvw;
   border-radius: 15px;
 }
 
@@ -71,10 +72,10 @@ main p {
 .team-info li {
   font-size: 0.8rem;
   list-style: inside;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
-.team-info h4{
+.team-info h4 {
   text-align: center;
 }
 
@@ -85,6 +86,10 @@ main p {
   gap: 1.5rem;
 }
 
+.tech-content{
+  height: 16rem;
+}
+
 .team-info_text {
   border: 2px solid white;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -93,14 +98,13 @@ main p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-    width: 30dvw;
-
+  width: 30dvw;
 }
 
-.team-info_text span{
+.team-info_text span {
   text-transform: uppercase;
   font-size: 0.85rem;
- 
+
 }
 
 .photo {
@@ -121,66 +125,21 @@ main p {
   gap: 2rem;
   height: 2rem;
   margin-top: 0.5rem;
-  margin-bottom: 1.5rem
+  margin-bottom: 1.5rem;
+
 }
 
+.tech_logos img {
+  width: 2rem;
+}
 
-
-/*contact*/
-
-.contact {
+.mapa-content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8dvh 12dvw;
   gap: 1.5rem;
-  background: var(--color-pinkLight);
+  padding: 2rem;
 }
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 2rem;
-  width: 50dvh;
-}
-
-.contact div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: var(--color-white);
-  padding: 0.75rem 1rem;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.contact input,
-textarea {
-  border: none;
-  color: var(--color-brown);
-  outline: none;
-  padding: 0.25rem;
-  margin-left: 10px;
-  width: 100%;
-  font-family: var(--font);
-}
-
-.contact button {
-  color: var(--color-brown);
-  border: 1px solid var(--color-brown);
-  padding: 1rem 3rem;
-  transition: transform 0.5s ease;
-}
-
-.contact button:hover {
-  background-color: var(--color-pink);
-  border: transparent;
-  color: white;
-  transform: scale(1.1);
-}
-
 
 @media (max-width: 767px) {
   section {
@@ -218,20 +177,20 @@ textarea {
     margin-left: 2rem;
   }
 
-  .team-content{
+  .team-content {
     display: flex;
     flex-direction: column;
   }
 
-  .team-info_content{
+  .team-info_content {
     width: 100%;
   }
 
-  .team-info_text{
+  .team-info_text {
     width: 100%;
   }
 
-  .photo{
+  .photo {
     width: 14rem;
   }
 

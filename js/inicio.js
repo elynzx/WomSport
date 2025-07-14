@@ -1,16 +1,17 @@
-
 /* Carga de productos por marca */
 
 document.addEventListener("DOMContentLoaded", function () {
-    const brandLogos = document.querySelectorAll(".brands-content__logo a");
+  const brandLogos = document.querySelectorAll(".brands-content__logo a");
 
-    brandLogos.forEach(logo => {
-        logo.addEventListener("click", function (event) {
-            event.preventDefault();
-            const brandName = this.querySelector("img").alt; 
-            window.location.href = `tienda.html?marca=${encodeURIComponent(brandName)}`;
-        });
+  brandLogos.forEach((logo) => {
+    logo.addEventListener("click", function (event) {
+      event.preventDefault();
+      const brandName = this.querySelector("img").alt;
+      window.location.href = `tienda.html?marca=${encodeURIComponent(
+        brandName
+      )}`;
     });
+  });
 });
 
 /* Productos con mayor calificación */
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((productos) => {
       const productosTop = productos
         .sort((a, b) => b.calificacion - a.calificacion)
-        .slice(0, 8); 
+        .slice(0, 8);
       mostrarProductosCarrusel(productosTop);
     });
 
@@ -57,10 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   btnPrev.addEventListener("click", () => {
-    contenedorCarrusel.scrollLeft -= 300; 
+    contenedorCarrusel.scrollLeft -= 300;
   });
 });
-
 
 /* Carga de productos nuevos */
 
@@ -102,4 +102,3 @@ function mostrarNovedades(lista) {
         `;
   });
 }
-
