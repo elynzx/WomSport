@@ -16,17 +16,24 @@ document.getElementById("link-to-login").addEventListener("click", () => {
     loginSection.style.display = "block";
 });
 
-document.getElementById("register-form").addEventListener("submit", function (e) {
+registerForm.addEventListener("submit", function (e) {
     e.preventDefault();
+    limpiarErrores();
 
     const nombres = document.getElementById("nombres").value.trim();
     const apellidos = document.getElementById("apellidos").value.trim();
     const correo = document.getElementById("correo").value.trim().toLowerCase();
-    const password = document.getElementById("password").value;
+    const password = document.getElementById("register-pass").value;
     const confirmPass = document.getElementById("confirm-password").value;
+    const aceptoTerminos = document.getElementById("terminos").checked;
 
     if (password !== confirmPass) {
-        alert("Las contraseñas no coinciden.");
+        mostrarError("confirm-password", "*Las contraseñas no coinciden.");
+        return;
+    }
+
+    if (!aceptoTerminos) {
+        mostrarError("terminos", "*Debes aceptar los términos y condiciones.");
         return;
     }
 
@@ -34,7 +41,7 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     const existe = usuarios.find(u => u.correo === correo);
 
     if (existe) {
-        alert("Ya existe una cuenta con este correo.");
+        mostrarError("correo", "*Ya existe una cuenta con este correo.");
         return;
     }
 
@@ -42,13 +49,17 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     usuarios.push(nuevoUsuario);
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-    alert("Registro exitoso 🎉");
-    // Redirigir, mostrar mensaje o limpiar campos
-    document.getElementById("register-form").reset();
+    mostrarModal("Registro exitoso!");
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 1000);
+    registerForm.reset();
 });
 
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    limpiarErrores();
+
     const correoIngresado = document.getElementById("login-user").value.trim().toLowerCase();
     const passwordIngresado = document.getElementById("login-pass").value.trim();
 
@@ -57,9 +68,58 @@ loginForm.addEventListener("submit", (e) => {
 
     if (existe) {
         localStorage.setItem("usuarioActivo", JSON.stringify(existe));
-        alert("Inicio de sesión exitoso 👋");
-        window.location.href = "tienda.html";
+        mostrarModal("Inicio de sesión exitoso!");
+
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 1000);
     } else {
-        alert("Correo o contraseña incorrectos.");
+        mostrarError("login-user", "*Correo o contraseña incorrectos.");
+        mostrarError("login-pass", " ");
     }
 });
+
+
+document.querySelectorAll(".toggle-icon").forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+        const input = toggle.previousElementSibling;
+        const icon = toggle.querySelector("i");
+
+        if (input.type === "password") {
+            input.type = "text";
+            icon.classList.replace("fa-eye-slash", "fa-eye");
+        } else {
+            input.type = "password";
+            icon.classList.replace("fa-eye", "fa-eye-slash");
+        }
+    });
+});
+
+function mostrarModal(texto) {
+    const modal = document.getElementById("modal-confirm");
+    const modalText = document.getElementById("modal-text");
+    modalText.textContent = texto;
+    modal.classList.remove("hidden");
+    modal.classList.add("active");
+
+    setTimeout(() => {
+        modal.classList.remove("active");
+        modal.classList.add("hidden");
+    }, 1000);
+}
+
+
+function mostrarError(idCampo, mensaje) {
+    const errorTag = document.getElementById(`error-${idCampo}`);
+    if (errorTag) errorTag.textContent = mensaje;
+}
+
+function limpiarErrores() {
+    document.querySelectorAll(".error-msg").forEach(p => p.textContent = "");
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal-confirm");
+    modal.classList.add("hidden");
+});
+

@@ -1,3 +1,8 @@
+.hidden {
+    display: none !important;
+}
+
+
 .sesion-container {
     display: flex;
     flex-direction: column;
@@ -20,7 +25,6 @@
 .form-container form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     align-items: center;
     width: 50dvh;
 }
@@ -34,6 +38,7 @@
     border-radius: 20px;
     border: 1px solid rgb(216, 216, 216);
     width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 .form-container input,
@@ -57,4 +62,56 @@ textarea {
 
 .form-container button:hover {
     transform: scale(1.1);
+}
+
+
+.terms-content input {
+    width: max-content;
+    margin-right: 0.75rem;
+}
+
+.form-container .terms-content {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1.5rem;
+}
+
+.modal-content p {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.error-msg {
+    color: rgb(145, 8, 35);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.modal {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal.active {
+  opacity: 1;
 }

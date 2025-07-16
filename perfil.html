@@ -7,6 +7,7 @@
     <link rel="icon" href="./img/logo.svg" type="image/svg+xml" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/paginas/perfil.css" />
     <link rel="stylesheet" href="css/componentes/header.css" />
     <link rel="stylesheet" href="css/componentes/footer.css" />
     <link rel="stylesheet" href="css/componentes/forms.css" />
@@ -56,77 +57,25 @@
         </div>
     </header>
 
-    <main class="sesion-container">
+    <main class="perfil-container">
+        <div class="perfil-user">
+            <img src="img/perfil/user-photo.webp" alt="Foto de perfil del usuario" />
+            <p id="saludo-usuario"></p>
+        </div>
 
-        <section class="form-container">
-            <h2>Iniciar Sesión</h2>
-            <form id="login-form">
+        <div class="perfil-right">
+            <section class="perfil-header">
+                <h2>Perfil de Usuario</h2>
+                <button id="btn-logout">Cerrar sesión</button>
+            </section>
 
-                <p class="error-msg" id="error-login-user"></p>
-                <div>
-                    <i class="fa fa-envelope icon"></i>
-                    <input type="email" id="login-user" placeholder="Correo electrónico" required />
-                </div>
+            <hr />
 
-                <p class="error-msg" id="error-login-pass"></p>
-                <div class="password-wrapper">
-                    <i class="fa fa-lock icon"></i>
-                    <input type="password" id="login-pass" placeholder="Contraseña" required />
-                    <span id="toggle-pass" class="toggle-icon"><i class="fa-regular fa-eye-slash"></i></span>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-            <p>¿No tienes cuenta? <a href="#" id="link-to-register"><strong>Regístrate aquí</strong></a></p>
-        </section>
-
-        <section class="form-container" id="register-section" style="display: none;">
-            <h2>Registro de Usuario</h2>
-            <form id="register-form">
-
-                <div>
-                    <i class="fa fa-user icon"></i>
-                    <input type="text" id="nombres" placeholder="Nombres" required />
-                </div>
-
-                <div>
-                    <i class="fa fa-user icon"></i>
-                    <input type="text" id="apellidos" placeholder="Apellidos" required />
-                </div>
-                <p class="error-msg" id="error-correo"></p>
-                <div>
-                    <i class="fa fa-envelope icon"></i>
-                    <input type="email" id="correo" placeholder="Correo electrónico" required />
-                </div>
-                <p class="error-msg" id="error-register-pass"></p>
-                <div class="password-wrapper">
-                    <i class="fa fa-lock icon"></i>
-                    <input type="password" id="register-pass" placeholder="Contraseña" required />
-                    <span id="" class="toggle-icon"><i class="fa-regular fa-eye-slash"></i></span>
-                </div>
-                <p class="error-msg" id="error-confirm-password"></p>
-                <div class="password-wrapper">
-                    <i class="fa fa-lock icon"></i>
-                    <input type="password" id="confirm-password" placeholder="Repetir contraseña" required />
-                    <span id="" class="toggle-icon"><i class="fa-regular fa-eye-slash"></i></span>
-                </div>
-
-                <div class="terms-content">
-                    <label><input type="checkbox" id="promo" /> Autorizo recibir promociones al correo</label>
-                </div>
-                <div class="terms-content">
-                    <label><input type="checkbox" id="terminos" required /> Acepto los términos y condiciones del
-                        sitio.</label>
-                </div>
-                <p class="error-msg" id="error-terminos"></p>
-                <button type="submit">Crear cuenta</button>
-            </form>
-            <p>¿Ya tienes una cuenta? <a href="#" id="link-to-login"><strong>Inicia sesión aquí</strong></a></p>
-        </section>
-
-        <div id="modal-confirm" class="modal hidden">
-            <div class="modal-content">
-                <p id="modal-text"></p>
-            </div>
+            <section class="perfil-datos">
+                <p><strong>Nombres:</strong> <span id="dato-nombres"></span></p>
+                <p><strong>Apellidos:</strong> <span id="dato-apellidos"></span></p>
+                <p><strong>Correo:</strong> <span id="dato-correo"></span></p>
+            </section>
         </div>
     </main>
 
@@ -176,7 +125,7 @@
     </footer>
 
     <script src="js/header.js"></script>
-    <script src="js/sesion.js"></script>
+    <script src="js/perfil.js"></script>
 </body>
 
 </html>
