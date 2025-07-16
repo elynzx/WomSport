@@ -24,10 +24,6 @@ small {
 
 body {
   background-color: rgba(255, 255, 255, 1);
-  color: #333333;
-  font-family: "Barlow", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
 }
@@ -44,13 +40,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Barlow", sans-serif;
+
   font-weight: 500;
   margin-top: 0;
 }
 
 h1 {
+  margin-top: 3rem;
   font-size: 32px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -97,7 +95,7 @@ a:focus {
 
 ul {
   list-style: none;
-  margin: 0;
+  margin-top: 1rem;
   padding: 0;
 }
 
@@ -168,7 +166,6 @@ ul {
 
 .article-list-item {
   font-size: 16px;
-  padding: 15px 0;
 }
 
 .icon-star {
@@ -262,8 +259,10 @@ ul {
   color: #333333;
 }
 
+
+
 .article-list-item.active .accordion-content {
-  max-height: 300px; /* ajustable según el contenido */
+  max-height: 300px;
   margin-top: 10px;
 }
 
@@ -273,4 +272,14 @@ ul {
   transition: max-height 0.3s ease;
   font-size: 15px;
   padding-left: 15px;
+}
+
+.chevron-icon {
+  float: right;
+  color: var(--color-brown);
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
 }

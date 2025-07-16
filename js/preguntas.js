@@ -1,26 +1,35 @@
-  document.addEventListener("DOMContentLoaded", () => {
-    const triggers = document.querySelectorAll(".accordion-trigger");
+document.addEventListener("DOMContentLoaded", () => {
+  const triggers = document.querySelectorAll(".accordion-trigger");
 
-    triggers.forEach((trigger) => {
-      trigger.addEventListener("click", () => {
-        const currentContent = trigger.nextElementSibling;
+  triggers.forEach((trigger) => {
+    const icon = document.createElement("i");
+    icon.classList.add("fa", "fa-chevron-down", "chevron-icon");
+    icon.style.marginLeft = "10px";
+    trigger.appendChild(icon);
 
-        // Cierra otros abiertos
-        document.querySelectorAll(".accordion-content").forEach((content) => {
-          if (content !== currentContent) {
-            content.style.maxHeight = null;
-            content.classList.remove("open");
-          }
-        });
+    trigger.addEventListener("click", () => {
+      const currentContent = trigger.nextElementSibling;
 
-        // Alternar actual
-        if (currentContent.classList.contains("open")) {
-          currentContent.style.maxHeight = null;
-          currentContent.classList.remove("open");
-        } else {
-          currentContent.style.maxHeight = currentContent.scrollHeight + "px";
-          currentContent.classList.add("open");
+      document.querySelectorAll(".accordion-content").forEach((content) => {
+        if (content !== currentContent) {
+          content.style.maxHeight = null;
+          content.classList.remove("open");
         }
       });
+
+      document.querySelectorAll(".chevron-icon").forEach((chevron) => {
+        if (chevron !== icon) chevron.classList.remove("rotated");
+      });
+
+      if (currentContent.classList.contains("open")) {
+        currentContent.style.maxHeight = null;
+        currentContent.classList.remove("open");
+        icon.classList.remove("rotated");
+      } else {
+        currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+        currentContent.classList.add("open");
+        icon.classList.add("rotated");
+      }
     });
   });
+});
