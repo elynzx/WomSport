@@ -59,4 +59,50 @@ class Carrito {
     }
     return total;
   }
+
+  async transformCarrito() {
+    const response = await fetch("data/productos.json");
+    const productos = await response.json();
+    const result = this._transformAllProductsData(this.carrito, productos);
+    console.log(result); // Here you'll get the actual result
+    return result; // Optional: return if you want to use it elsewhere
+  }
+
+  _transformAllProductsData(quantities, products) {
+    const sizeNames = {
+      XS: "Extra Small",
+      S: "Small",
+      M: "Medium",
+      L: "Large",
+      XL: "Extra Large",
+      XXL: "Double Extra Large",
+    };
+
+    const results = [];
+
+    for (const [productId, productData] of Object.entries(quantities)) {
+      const id = parseInt(productId, 10);
+      const product = products.find((p) => p.id === id);
+
+      if (!product) continue; // Skip if not found
+
+      const sizes = Object.entries(productData.data).map(
+        ([alias, quantity]) => ({
+          name: sizeNames[alias] || alias,
+          quantity,
+          alias,
+        })
+      );
+
+      results.push({
+        id,
+        name: product.nombre || "Unknown Product",
+        image: `https://example.com/${product.imagen}`, // Adjust this base URL
+        cost: product.precio_actual,
+        sizes,
+      });
+    }
+
+    return results;
+  }
 }
