@@ -79,91 +79,124 @@
       <div id="loading" class="spinnercontainer" style="height: 80dvh">
         <div class="spinner"></div>
       </div>
-
-      <div id="non-items" class="container" style="display: none">
-        <img id="bag" src="img/shoping-bag.png" alt="Bolsa de compra" />
-        <span
-          style="
-            margin: 1rem 0rem 2rem;
-            color: #ccc;
-            font-weight: 800;
-            font-size: large;
-          "
-          >No hay productos en el carrito</span
-        >
-        <button class="primary-button">
-          <a href="/tienda.html" style="color: #fff !important">
-            VOLVER A LA TIENDA
-          </a>
-        </button>
-      </div>
-
-      <div id="items" class="container" style="display: none">
-        <div class="crt-card" x-data="productCard()">
-          <div class="crt-card-header">
-            <img
-              :src="product.image"
-              :alt="product.name"
-              class="crt-product-image"
-            />
-            <div class="crt-product-info">
-              <div class="crt-product-name" x-text="product.name"></div>
-              <div class="crt-product-total">
-                <span style="color: #999">$</span
-                ><span x-text="product.cost"></span> ×
-                <span x-text="totalQuantity"></span> =
-                <span class="crt-total-cost"
-                  >$<span x-text="totalCost"></span
-                ></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="crt-card-body">
-            <template x-if="product.sizes.length > 0">
-              <div>
-                <template x-for="(size, index) in product.sizes" :key="index">
-                  <div class="crt-size-item">
-                    <span class="crt-size-name" x-text="size.name"></span>
-                    <div class="crt-quantity-controls">
-                      <button
-                        class="crt-quantity-btn"
-                        @click="updateQuantity(index, -1)"
-                        :disabled="size.quantity <= 0"
-                      >
-                        −
-                      </button>
-                      <span
-                        class="crt-quantity-display"
-                        x-text="size.quantity"
-                      ></span>
-                      <button
-                        class="crt-quantity-btn"
-                        @click="updateQuantity(index, 1)"
-                      >
-                        +
-                      </button>
-                      <button
-                        class="crt-remove-size"
-                        @click="removeSize(index)"
-                        title="Remove size"
-                      >
-                        ✕
-                      </button>
+      <div id="items" class="container" style="display: none;padding: 2rem 2rem 0">
+        <div x-data="productCard()">
+          <!-- Mostrar productos -->
+          <template x-if="products.length > 0">
+            <div>
+              <template
+                x-for="(product, productIndex) in products"
+                :key="product.id"
+              >
+                <div class="crt-card">
+                  <!-- Header del producto -->
+                  <div class="crt-card-header">
+                    <img
+                      :src="product.image"
+                      :alt="product.name"
+                      class="crt-product-image"
+                    />
+                    <div class="crt-product-info">
+                      <div class="crt-product-name" x-text="product.name"></div>
+                      <div class="crt-product-total">
+                        <span style="color: #999">S./</span>
+                        <span x-text="product.cost"></span> ×
+                        <span x-text="totalQuantity(product)"></span> =
+                        <span class="crt-total-cost">
+                          S./<span x-text="totalCost(product)"></span>
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </template>
+
+                  <!-- Cuerpo del producto (tallas y botones) -->
+                  <div class="crt-card-body">
+                    <template x-if="product.sizes.length > 0">
+                      <div>
+                        <template
+                          x-for="(size, sizeIndex) in product.sizes"
+                          :key="sizeIndex"
+                        >
+                          <div class="crt-size-item">
+                            <span
+                              class="crt-size-name"
+                              x-text="size.name"
+                            ></span>
+                            <div class="crt-quantity-controls">
+                              <button
+                                class="crt-quantity-btn"
+                                @click="updateQuantity(productIndex, sizeIndex, -1)"
+                                :disabled="size.quantity <= 0"
+                              >
+                                −
+                              </button>
+                              <span
+                                class="crt-quantity-display"
+                                x-text="size.quantity"
+                              ></span>
+                              <button
+                                class="crt-quantity-btn"
+                                @click="updateQuantity(productIndex, sizeIndex, 1)"
+                              >
+                                +
+                              </button>
+                              <button
+                                class="crt-remove-size"
+                                @click="removeSize(productIndex, sizeIndex)"
+                                title="Quitar talla"
+                              >
+                                ✕
+                              </button>
+                            </div>
+                          </div>
+                        </template>
+                      </div>
+                    </template>
+
+                    <template x-if="product.sizes.length === 0">
+                      <div class="crt-empty-state">No sizes available</div>
+                    </template>
+
+                    <button
+                      class="crt-delete-product"
+                      @click="deleteProduct(productIndex)"
+                    >
+                      Eliminar producto
+                    </button>
+                  </div>
+                </div>
+              </template>
+
+              <!-- Total general -->
+              <div class="crt-card">
+                <div class="crt-card-header">
+                  Total: S./&nbsp;<span x-text="grandTotal()"></span>
+                </div>
               </div>
-            </template>
+            </div>
+          </template>
 
-            <template x-if="product.sizes.length === 0">
-              <div class="crt-empty-state">No sizes available</div>
-            </template>
-
-            <button class="crt-delete-product" @click="deleteProduct()">
-              Delete Product
-            </button>
-          </div>
+          <!-- Estado vacío: sin productos -->
+          <template x-if="products.length === 0">
+            <div id="non-items" class="container">
+              <img id="bag" src="img/shoping-bag.png" alt="Bolsa de compra" />
+              <span
+                style="
+                  margin: 1rem 0rem 2rem;
+                  color: #ccc;
+                  font-weight: 800;
+                  font-size: large;
+                "
+              >
+                No hay productos en el carrito
+              </span>
+              <button class="primary-button">
+                <a href="/tienda.html" style="color: #fff !important">
+                  VOLVER A LA TIENDA
+                </a>
+              </button>
+            </div>
+          </template>
         </div>
       </div>
     </main>

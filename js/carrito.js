@@ -3,57 +3,67 @@ const itemsHTML = document.getElementById("items");
 const loading = document.getElementById("loading");
 const globa_carrito = new Carrito();
 
-window.addEventListener("DOMContentLoaded", () => {
-  if (globa_carrito.get_total_items() === 0) {
-    loading.remove();
-    noItems.style.display = "flex";
-    itemsHTML.remove();
-  }
-  noItems.remove();
-  loading.remove();
-  itemsHTML.style.display = "flex";
-});
-
-
 function productCard() {
-    return {
-        product: {
-            name: 'Classic T-Shirt',
-            image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&h=200&fit=crop',
-            cost: 25.99,
-            sizes: [
-                { name: 'Small', quantity: 2 },
-                { name: 'Medium', quantity: 3 },
-                { name: 'Large', quantity: 4 }
-            ]
-        },
-        
-        get totalQuantity() {
-            return this.product.sizes.reduce((sum, size) => sum + size.quantity, 0);
-        },
-        
-        get totalCost() {
-            return (this.totalQuantity * this.product.cost).toFixed(2);
-        },
-        
-        updateQuantity(index, change) {
-            this.product.sizes[index].quantity = Math.max(0, this.product.sizes[index].quantity + change);
-        },
-        
-        removeSize(index) {
-            this.product.sizes.splice(index, 1);
-        },
-        
-        deleteProduct() {
-            if (confirm('Are you sure you want to delete this product?')) {
-                alert('Product deleted!');
-                // Handle deletion logic here
-                // You can add custom logic like:
-                // - Remove from cart
-                // - Update database
-                // - Redirect to another page
-                // - Call an API endpoint
-            }
-        }
-    }
+  return {
+    products: [
+    ],
+
+    init() {
+      itemsHTML.style.display = 'none';
+      loading.style.display = 'flex';
+      fetch("/data/productos.json")
+        .then((response) => response.json())
+        .then((productos) => {
+          this.products = globa_carrito._transformAllProductsData(productos);
+        })
+        .catch((error) => {
+          console.error("Error loading products:", error);
+        });
+      console.log("Getting products for Alpine.js:");
+      loading.style.display = 'none';
+      itemsHTML.style.display = 'flex';
+    },
+
+    totalQuantity(product) {
+      return product.sizes.reduce((sum, size) => sum + size.quantity, 0);
+    },
+
+    totalCost(product) {
+      return (this.totalQuantity(product) * product.cost).toFixed(2);
+    },
+
+    updateQuantity(productIndex, sizeIndex, change) {
+      const product = this.products[productIndex];
+      product.sizes[sizeIndex].quantity = Math.max(
+        0,
+        product.sizes[sizeIndex].quantity + change
+      );
+    },
+
+    removeSize(productIndex, sizeIndex) {
+      const product = this.products[productIndex];
+      const size = product.sizes[sizeIndex]
+      globa_carrito.remove_item(product.id, size.alias, size.quantity + 1);
+      this.products[productIndex].sizes.splice(sizeIndex, 1);
+
+      if (this.products[productIndex].sizes.length == 0) {
+        this.init();
+      }
+
+    },
+
+    deleteProduct(productIndex) {
+      const product = this.products[productIndex]
+      if (confirm('Are you sure you want to delete this product?')) {
+        this.products.splice(productIndex, 1);
+        globa_carrito.delete_product(product.id);
+      }
+    },
+    grandTotal() {
+      return this.products.reduce((sum, product) => {
+        const quantity = product.sizes.reduce((q, size) => q + size.quantity, 0);
+        return sum + quantity * product.cost;
+      }, 0).toFixed(2);
+    },
+  };
 }

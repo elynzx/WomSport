@@ -29,18 +29,32 @@ class Carrito {
   }
 
   remove_item(id, talla, amount) {
-    let item_data = this.carrito[id];
-    if (!item_data) return;
-    let items = item_data.data;
-    let on_cart = items[talla];
-    if (!on_cart) return;
-    on_cart = Math.max(on_cart - amount, 0);
-    if (on_cart === 0) {
+    const item_data = this.carrito[id];
+    if (!item_data || !item_data.data) return;
+
+    const items = { ...item_data.data };
+    const currentAmount = items[talla];
+    if (!currentAmount) return;
+
+    const newAmount = Math.max(currentAmount - amount, 0);
+
+    if (newAmount === 0) {
       delete items[talla];
     } else {
-      items[talla] = on_cart;
+      items[talla] = newAmount;
     }
-    this.carrito[id] = { data: items };
+
+    if (Object.keys(items).length === 0) {
+      delete this.carrito[id];
+    } else {
+      this.carrito[id] = { data: items };
+    }
+
+    this._save();
+  }
+
+  delete_product(id) {
+    delete this.carrito[id];
     this._save();
   }
 
@@ -63,12 +77,13 @@ class Carrito {
   async transformCarrito() {
     const response = await fetch("data/productos.json");
     const productos = await response.json();
-    const result = this._transformAllProductsData(this.carrito, productos);
+    const result = this._transformAllProductsData(productos);
     console.log(result); // Here you'll get the actual result
     return result; // Optional: return if you want to use it elsewhere
   }
 
-  _transformAllProductsData(quantities, products) {
+  _transformAllProductsData(products) {
+    const quantities = this.carrito
     const sizeNames = {
       XS: "Extra Small",
       S: "Small",
@@ -97,9 +112,15 @@ class Carrito {
       results.push({
         id,
         name: product.nombre || "Unknown Product",
-        image: `https://example.com/${product.imagen}`, // Adjust this base URL
+        image: product.imagen, // Adjust this base URL
         cost: product.precio_actual,
         sizes,
+        get totalQuantity() {
+            return this.product.sizes.reduce((sum, size) => sum + size.quantity, 0);
+        },
+        get totalCost() {
+            return (this.totalQuantity * this.product.cost).toFixed(2);
+        }
       });
     }
 
