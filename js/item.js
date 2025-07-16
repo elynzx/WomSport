@@ -3,12 +3,15 @@ const addToCart = document.getElementById("add-to-cart");
 const buttons = document.querySelectorAll(".size-btn");
 const urlParams = new URLSearchParams(window.location.search);
 const targetId = urlParams.get("id");
+var clotheSize = "";
+
+const globa_carrito = new Carrito();
 
 var favs_list = [];
 
 function set_favs_list(items) {
   favs_list = Array.isArray(items) ? items : [items];
-  window.localStorage.setItem('ws_favoritos', JSON.stringify(favs_list));
+  window.localStorage.setItem("ws_favoritos", JSON.stringify(favs_list));
 }
 
 function check_fav_for(id) {
@@ -27,7 +30,7 @@ function add_fav(id) {
 
 function remove_fav(id) {
   if (check_fav_for(id)) {
-    favs_list = favs_list.filter(fav => fav !== id);
+    favs_list = favs_list.filter((fav) => fav !== id);
     set_favs_list(favs_list);
   }
 }
@@ -40,14 +43,15 @@ window.addEventListener("DOMContentLoaded", () => {
   buttons.forEach((btn) => btn.classList.remove("active"));
   addToCart.disabled = true;
 
-  const favoritos = JSON.parse(window.localStorage.getItem('ws_favoritos') ?? '[]');
+  const favoritos = JSON.parse(
+    window.localStorage.getItem("ws_favoritos") ?? "[]"
+  );
   set_favs_list(favoritos);
 
   const heart = document.getElementById("heart");
   if (heart && check_fav_for(targetId)) {
     heart.classList.add("active");
   }
-
 });
 
 // añadimos un evento para al presionar una talla
@@ -61,6 +65,7 @@ function add_listeners() {
 
       // Añade al boton que hicieron click
       button.classList.add("active");
+      clotheSize = button.innerText;
       addToCart.disabled = false;
 
       // Cambia el texto del carrito
@@ -115,10 +120,10 @@ function setStars(n) {
 function changeHeartState() {
   const heart = document.getElementById("heart");
   if (heart.classList.contains("active")) {
-    remove_fav(targetId)
+    remove_fav(targetId);
     heart.classList.remove("active");
   } else {
-    add_fav(targetId)
+    add_fav(targetId);
     heart.classList.add("active");
   }
 }
@@ -136,6 +141,32 @@ function renderSizes(item) {
   });
 
   return container.outerHTML;
+}
+
+function addToCarrito() {
+  const quantitySpan = document.getElementById("quantity");
+  let current = parseInt(quantitySpan.innerText);
+
+  addToCart.disabled = true;
+
+  globa_carrito.add_item(targetId, clotheSize, current);
+  showToast("El producto fue agregado\nal carrito");
+}
+
+function showToast(message) {
+  const container = document.getElementById("toastContainer");
+  const toast = document.createElement("div");
+  toast.className = "toast";
+  toast.textContent = message;
+
+  container.appendChild(toast);
+
+  // Eliminar después de animación
+  setTimeout(() => {
+    toast.remove();
+    window.location.href = '/carrito.html'
+    addToCart.disabled = false;
+  }, 1500);
 }
 
 fetch("data/productos.json")
