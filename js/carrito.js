@@ -34,10 +34,12 @@ function productCard() {
 
     updateQuantity(productIndex, sizeIndex, change) {
       const product = this.products[productIndex];
-      product.sizes[sizeIndex].quantity = Math.max(
+      const amount = Math.max(
         0,
         product.sizes[sizeIndex].quantity + change
       );
+      product.sizes[sizeIndex].quantity = amount;
+      globa_carrito.remove_item(product.id, product.sizes[sizeIndex].alias, -change)
     },
 
     removeSize(productIndex, sizeIndex) {
