@@ -8,8 +8,9 @@
   <!-- CSS -->
 
   <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/paginas/item.css" />
+  <link rel="stylesheet" href="css/paginas/carrito.css" />
   <link rel="stylesheet" href="css/componentes/product.css" />
+  <link rel="stylesheet" href="css/componentes/spinner.css" />
   <link rel="stylesheet" href="css/componentes/header.css" />
   <link rel="stylesheet" href="css/componentes/footer.css" />
   <link rel="stylesheet" href="css/componentes/buttons.css" />
@@ -21,6 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,400;0,700;0,800;1,100;1,400;1,700;1,800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>WomSport</title>
 </head>
 
@@ -64,15 +66,24 @@
       </div>
     </div>
   </header>
-  <main class="container">
-    <img id="bag" src="img/shoping-bag.png" alt="Bolsa de compra">
-    <span style="margin: 1rem 0rem 2rem; color: #ccc; font-weight: 800; font-size: large;">No hay productos en el
-      carrito</span>
-    <button class="primary-button">
-      <a href="/tienda.html" style="color: #fff !important;">
-        VOLVER A LA TIENDA
-      </a>
-    </button>
+  <main>
+    <div id="loading" class="spinnercontainer" style="height: 80dvh">
+      <div class="spinner"></div>
+    </div>
+
+    <div id="non-items" class="container" style="display: none;">
+      <img id="bag" src="img/shoping-bag.png" alt="Bolsa de compra">
+      <span style="margin: 1rem 0rem 2rem; color: #ccc; font-weight: 800; font-size: large;">No hay productos en el
+        carrito</span>
+      <button class="primary-button">
+        <a href="/tienda.html" style="color: #fff !important;">
+          VOLVER A LA TIENDA
+        </a>
+      </button>
+    </div>
+
+    <div id="items" class="container" style="display: none;">
+    </div>
   </main>
 
   <footer>
@@ -119,6 +130,8 @@
       <p>&copy; 2025 WomSport | Todos los derechos reservados</p>
     </div>
   </footer>
+  <script src="js/carritoClass.js"></script>
+  <script src="js/carrito.js"></script>
   <script src="js/header.js"></script>
 </body>
 

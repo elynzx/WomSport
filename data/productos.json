@@ -819,9 +819,9 @@
         "descuento": null,
         "imagen": "img/productos/casacas/cas04.png",
         "miniaturas": [
-            "img/productos/casacas/cas04-a.jpg",
-            "img/productos/casacas/cas04-b.jpg",
-            "img/productos/casacas/cas04-c.jpg"
+            "img/productos/casacas/cas04-a.png",
+            "img/productos/casacas/cas04-b.png",
+            "img/productos/casacas/cas04-c.png"
         ],
         "categoria": "Casacas",
         "stock": 31,
