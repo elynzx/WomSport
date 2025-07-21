@@ -13,7 +13,7 @@ function productCard() {
       fetch("/data/productos.json")
         .then((response) => response.json())
         .then((productos) => {
-          this.products = globa_carrito._transformAllProductsData(productos);
+          this.products = globa_carrito._transform_all_products_data(productos);
         })
         .catch((error) => {
           console.error("Error loading products:", error);

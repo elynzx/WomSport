@@ -164,7 +164,6 @@ function showToast(message) {
   // Eliminar después de animación
   setTimeout(() => {
     toast.remove();
-    window.location.href = '/carrito.html'
     addToCart.disabled = false;
   }, 1500);
 }

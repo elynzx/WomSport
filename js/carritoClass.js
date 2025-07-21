@@ -74,15 +74,33 @@ class Carrito {
     return total;
   }
 
-  async transformCarrito() {
+  async get_grand_total() {
+    try {
+      const response = await fetch("/data/productos.json");
+      const productos = await response.json();
+      const temp_prods = this._transform_all_products_data(productos);
+
+      const total = temp_prods.reduce((sum, product) => {
+        const quantity = product.sizes.reduce((q, size) => q + size.quantity, 0);
+        return sum + quantity * product.cost;
+      }, 0);
+
+      return total.toFixed(2);
+    } catch (error) {
+      console.error("Error loading products:", error);
+      return null;
+    }
+  }
+
+  async transform_carrito() {
     const response = await fetch("data/productos.json");
     const productos = await response.json();
-    const result = this._transformAllProductsData(productos);
+    const result = this._transform_all_products_data(productos);
     console.log(result); // Here you'll get the actual result
     return result; // Optional: return if you want to use it elsewhere
   }
 
-  _transformAllProductsData(products) {
+  _transform_all_products_data(products) {
     const quantities = this.carrito
     const sizeNames = {
       XS: "Extra Small",

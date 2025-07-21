@@ -167,12 +167,6 @@
                     >
                       Eliminar producto
                     </button>
-                    <button
-                      class="crt-delete-product"
-                      onclick="window.location.href='checkout.html'"
-                    >
-                      Pagar
-                    </button>
                   </div>
                 </div>
               </template>
@@ -182,6 +176,9 @@
                 <div class="crt-card-header">
                   Total: S./&nbsp;<span x-text="grandTotal()"></span>
                 </div>
+                <button class="crt-delete-product" style="margin: 0.5rem; width: calc(100% - 1rem);" onclick="window.location.href='checkout.html'">
+                  Pagar
+                </button>
               </div>
             </div>
           </template>

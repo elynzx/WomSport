@@ -51,6 +51,7 @@
     </section>
 
     <main>
+      <center><div id='price_tag' style="margin-top: 03rem; font-weight: 500; font-size: 2rem;">Tu total es de:</div></center>
       <div class="container">
         <form action="">
           <div class="row">
@@ -105,8 +106,8 @@
                 <input type="text" placeholder="Mr. Jacob Aiden" />
               </div>
               <div class="input-box">
-                <span>Número :</span>
-                <input type="number" placeholder="1111 2222 3333 4444" />
+                <span style="display: flex;">Número : &nbsp;<span id="card-error" style="color:red; margin: 0;"></span></span>
+                <input id="card" type="text" placeholder="1111 2222 3333 4444" oninput="parseCardInfo()"/>
               </div>
               <div class="input-box">
                 <span>Exp. Mes :</span>
@@ -126,7 +127,7 @@
             </div>
           </div>
 
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn">Finalizar compra</button>
         </form>
       </div>
     </main>
@@ -179,7 +180,8 @@
         <p>&copy; 2025 WomSport | Todos los derechos reservados</p>
       </div>
     </footer>
-    <script src="js/favoritos.js"></script>
-    <script src="js/inicio.js"></script>
+    <script src="js/carritoClass.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
