@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Validate month name
   function isValidMonth(month) {
     return [
-      "january", "february", "march", "april", "may", "june",
-      "july", "august", "september", "october", "november", "december"
+      "enero", "febrero", "marzo", "abril", "mayo", "junio",
+      "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
     ].includes(month.toLowerCase());
   }
 
